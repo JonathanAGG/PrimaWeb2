@@ -12,11 +12,11 @@
 * ======================================================= */
 body {
   font-family: "Lato", Georgia, serif;
-  font-weight: 400;
+ /*  font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
-/*   color: rgba(255, 255, 255, 0.3); */
-  background: #FFF;
+  color: rgba(255, 255, 255, 0.3);
+  background: #FFF; */
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body {
@@ -774,7 +774,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 1);
 }
 #fh5co-started .fh5co-heading {
   margin-bottom: 0;
@@ -1791,8 +1791,7 @@ textarea {
 
 /*# sourceMappingURL=style.css.map */
 
-.fh5co-nav, .fh5co-header  {
-  font-family: Lato;
+.fh5co-nav {
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -1807,3 +1806,52 @@ textarea {
   font-size: 18px;
   color: #FFFFFF;
 }
+
+#content-header{
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
