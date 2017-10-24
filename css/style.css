@@ -1818,7 +1818,84 @@ textarea {
 }
 
 
+/* Adrian Styles */
 
+
+@media screen and (max-width: 768px) {
+  #responsiveText {
+    max-width: 65%;
+  }
+}
+
+.fh5co-nav2 {
+  background: black;
+  padding: 40px 0px 20px 0;
+}
+
+
+#fh5co-featured-menu .fh5co-heading h2, #fh5co-gallery .fh5co-heading h2, #fh5co-reservation-form .fh5co-heading h2 {
+  color: black;
+}
+
+.fh5co-section2 p {
+  color: black;
+}
+.circleNumber{
+  border: 2px solid #B3B0B0;
+  border-radius: 100%;
+  height: 25px;
+  padding: 5px 14px 7px 14px;
+  color: #B3B0B0;
+  cursor: pointer;
+  font-size: x-large;
+  margin-right: 10px;
+  background: linear-gradient(225deg, rgba(0,219,255,0) 0%, rgba(222,4,252,0) 100%);
+}
+.activeCircle{
+  background: linear-gradient(225deg, rgba(0,219,255,1) 0%, rgba(222,4,255,1) 100%);
+  color: white;
+  border: 0px
+}
+.fh5co-section2 .blockText{
+  font-family: Lato;
+  font-weight: bold;
+  color: #A3A3A3;
+  cursor: pointer;
+  width: 120px;
+  line-height: 20px;
+}
+.fh5co-section2 .activeBlock {
+  color: #9E21EF;
+}
+.prismaButton{
+  background: linear-gradient(254.19deg, #00C8FF 2.72%, #DD08F1 101.38%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: -10px;
+}
+.confRow{
+  border-top: 1px solid #AF02FA;
+}
+
+a{
+  font-family: Lato !important;
+}
+p{
+  font-family: Lato !important;
+}
+h1{
+  font-family: Lato !important;
+}
+h2{
+  font-family: Lato !important;
+}
+h3{
+  font-family: Lato !important;
+}
+b{
+  font-family: Lato !important;
+}
 
 
 
