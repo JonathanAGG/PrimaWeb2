@@ -138,7 +138,7 @@
 							</div>
 							<div class="col-md-4">
 								<h3><b>CUPO:</b> 100 personas</h3>
-								<button class="prismaButton">RESERVAR BLOQUE</button>
+								<button class="prismaButton"  data-toggle="modal" data-target="#reserveOne">RESERVAR BLOQUE</button>
 							</div>
 						</div>
 						<div class="row confRow">
@@ -219,70 +219,64 @@
 		</div>
 	</div>
 
-	<footer id="fh5co-footer" role="contentinfo" class="fh5co-section" style="background: black;">
+	<footer id="fh5co-footer" role="contentinfo" class="fh5co-section" style="background:black;padding-bottom:0px;">
 		<div class="container">
 			<div class="row row-pb-md">
-				<div class="col-md-4 fh5co-widget">
-					<h4>Tasty</h4>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+				<div class="col-md-4 col-md-push-1 fh5co-widget text-center" style="margin-top:10px;">
+					<img src="images/footerLogo.png" class="img-responsive" style="max-width:100%;cursor:pointer;">
 				</div>
-				<div class="col-md-2 col-md-push-1 fh5co-widget">
-					<h4>Links</h4>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Menu</a></li>
-						<li><a href="#">Gallery</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-2 col-md-push-1 fh5co-widget">
-					<h4>Categories</h4>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Landing Page</a></li>
-						<li><a href="#">Real Estate</a></li>
-						<li><a href="#">Personal</a></li>
-						<li><a href="#">Business</a></li>
-						<li><a href="#">e-Commerce</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-4 col-md-push-1 fh5co-widget">
-					<h4>Contact Information</h4>
-					<ul class="fh5co-footer-links">
-						<li>198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-						<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
-						<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-						<li><a href="http://https://freehtml5.co">freehtml5.co</a></li>
-					</ul>
-				</div>
-
-			</div>
-
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
-					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-facebook2"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-						</ul>
-					</p>
+				<div class="col-md-5 col-md-push-1">
+					<h3 style="color:white;font-weight:bold;margin-bottom:5px;">APÚNTATE A LO</h3>
+					<h2 style="background: -webkit-linear-gradient(226.13deg, #00E9FF 50%, #D300FF 100%);-webkit-background-clip:text;-webkit-text-fill-color: transparent;font-weight:bolder;margin-bottom:5px;">DESCONOCIDO</h2>
+					<input type="text" id="nameContact" style="width:100%;" placeholder="Nombre">
+					<input type="email" id="emailContact" style="width:100%;margin-top:5px;" placeholder="Correo">
+					<button class="prismaButton"  id="sendContact" onclick="sendContact()" style="float:right;margin-top:10px;padding:5px 20px;">ENVIAR</button>
+					<div style="display:flex;margin-top:60px;">
+						<b style="color:white;">Contacto:</b>
+						<p style="line-height:1;margin-left:5px;color:white;">info@prismafest.com</p>
+						<a href="https://www.facebook.com/prismafest.cr" target="_blank" style="margin-left:auto;">
+							<img src="images/fblogo.png" class="img-responsive" style="max-width:25px;max-height:25px;cursor:pointer;">
+						</a>
+					</div>
 				</div>
 			</div>
-
 		</div>
 	</footer>
-	</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
+
+<!-- Modals -->
+
+	<!-- Modal 1 -->
+	<div id="reserveOne" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content" style="color:black;">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" id="close1">&times;</button>
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h3 style="font-weight:bold;">RESERVAR BLOQUE 1</h3>
+							<h2  style="font-weight:bold;">EL MUNDO ESTÁ CAMBIANDO</h2>
+						</div>
+						<div class="col-md-12 text-center">
+							<input type="text" id="name1" style="width:60%;border:none;border-bottom:1px solid #AF02FA;font-size:large;margin-bottom: 20px;" placeholder="Nombre">
+						</div>
+						<div class="col-md-12 text-center">
+							<input type="text" id="email1" style="width:60%;border:none;border-bottom:1px solid #AF02FA;font-size:large;" placeholder="Correo">
+						</div>
+						<div class="col-md-12 text-center">
+							<button class="prismaButton"  id="send1" onclick="sendReservation(1)" style="margin-top:20px;">RESERVAR BLOQUE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Modals -->
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -307,128 +301,130 @@
 
 	<script type="text/javascript">
 		function show1() {
-		    var c1 = document.getElementById("circle1");
-			c1.className += " activeCircle";
-		    var b1 = document.getElementById("text1");
-			b1.className += " activeBlock";
-			
-		    var c2 = document.getElementById("circle2");
-			c2.className = " circleNumber";
-		    var b2 = document.getElementById("text2");
-			b2.className = " blockText";
+			$('#circle1').addClass('activeCircle');
+			$('#text1').addClass('activeBlock');
 
-		    var c3 = document.getElementById("circle3");
-			c3.className = " circleNumber";
-		    var b3 = document.getElementById("text3");
-			b3.className = " blockText";
+			$('#circle2').removeClass('activeCircle');
+			$('#circle3').removeClass('activeCircle');
+			$('#circle4').removeClass('activeCircle');
 
-		    var c4 = document.getElementById("circle4");
-			c4.className = " circleNumber";
-		    var b4 = document.getElementById("text4");
-			b4.className = " blockText";
+			$('#text2').removeClass('activeBlock');
+			$('#text3').removeClass('activeBlock');
+			$('#text4').removeClass('activeBlock');
 
-
-			var t1 = document.getElementById("bloque1");
-			t1.className = " ";
-			var t2 = document.getElementById("bloque2");
-			t2.className += " hidden";
-			var t3 = document.getElementById("bloque3");
-			t3.className += " hidden";
-			var t4 = document.getElementById("bloque4");
-			t4.className += " hidden"
+			$('#bloque2').addClass('hidden');
+			$('#bloque3').addClass('hidden');
+			$('#bloque4').addClass('hidden');
+			$('#bloque1').removeClass('hidden');
 		}
 		function show2() {
-		    var c1 = document.getElementById("circle2");
-			c1.className += " activeCircle";
-		    var b1 = document.getElementById("text2");
-			b1.className += " activeBlock";
-			
-		    var c2 = document.getElementById("circle1");
-			c2.className = " circleNumber";
-		    var b2 = document.getElementById("text1");
-			b2.className = " blockText";
+			$('#circle2').addClass('activeCircle');
+			$('#text2').addClass('activeBlock');
 
-		    var c3 = document.getElementById("circle3");
-			c3.className = " circleNumber";
-		    var b3 = document.getElementById("text3");
-			b3.className = " blockText";
+			$('#circle1').removeClass('activeCircle');
+			$('#circle3').removeClass('activeCircle');
+			$('#circle4').removeClass('activeCircle');
 
-		    var c4 = document.getElementById("circle4");
-			c4.className = " circleNumber";
-		    var b4 = document.getElementById("text4");
-			b4.className = " blockText";
+			$('#text1').removeClass('activeBlock');
+			$('#text3').removeClass('activeBlock');
+			$('#text4').removeClass('activeBlock');
 
-
-			var t1 = document.getElementById("bloque2");
-			t1.className = " ";
-			var t2 = document.getElementById("bloque1");
-			t2.className += " hidden";
-			var t3 = document.getElementById("bloque3");
-			t3.className += " hidden";
-			var t4 = document.getElementById("bloque4");
-			t4.className += " hidden"
+			$('#bloque1').addClass('hidden');
+			$('#bloque3').addClass('hidden');
+			$('#bloque4').addClass('hidden');
+			$('#bloque2').removeClass('hidden');
 		}
 		function show3() {
-		    var c1 = document.getElementById("circle3");
-			c1.className += " activeCircle";
-		    var b1 = document.getElementById("text3");
-			b1.className += " activeBlock";
-			
-		    var c2 = document.getElementById("circle2");
-			c2.className = " circleNumber";
-		    var b2 = document.getElementById("text2");
-			b2.className = " blockText";
+			$('#circle3').addClass('activeCircle');
+			$('#text3').addClass('activeBlock');
 
-		    var c3 = document.getElementById("circle1");
-			c3.className = " circleNumber";
-		    var b3 = document.getElementById("text1");
-			b3.className = " blockText";
+			$('#circle1').removeClass('activeCircle');
+			$('#circle2').removeClass('activeCircle');
+			$('#circle4').removeClass('activeCircle');
 
-		    var c4 = document.getElementById("circle4");
-			c4.className = " circleNumber";
-		    var b4 = document.getElementById("text4");
-			b4.className = " blockText";
+			$('#text1').removeClass('activeBlock');
+			$('#text2').removeClass('activeBlock');
+			$('#text4').removeClass('activeBlock');
 
-
-			var t1 = document.getElementById("bloque3");
-			t1.className = " ";
-			var t2 = document.getElementById("bloque2");
-			t2.className += " hidden";
-			var t3 = document.getElementById("bloque1");
-			t3.className += " hidden";
-			var t4 = document.getElementById("bloque4");
-			t4.className += " hidden"
+			$('#bloque1').addClass('hidden');
+			$('#bloque2').addClass('hidden');
+			$('#bloque4').addClass('hidden');
+			$('#bloque3').removeClass('hidden');
 		}
 		function show4() {
-		    var c1 = document.getElementById("circle4");
-			c1.className += " activeCircle";
-		    var b1 = document.getElementById("text4");
-			b1.className += " activeBlock";
+			$('#circle4').addClass('activeCircle');
+			$('#text4').addClass('activeBlock');
+
+			$('#circle1').removeClass('activeCircle');
+			$('#circle2').removeClass('activeCircle');
+			$('#circle3').removeClass('activeCircle');
+
+			$('#text1').removeClass('activeBlock');
+			$('#text2').removeClass('activeBlock');
+			$('#text3').removeClass('activeBlock');
+
+			$('#bloque1').addClass('hidden');
+			$('#bloque2').addClass('hidden');
+			$('#bloque3').addClass('hidden');
+			$('#bloque4').removeClass('hidden');
+		}
+
+		function sendContact() {
+			var nameContact = $('#nameContact').val();
+			var emailContact = $('#emailContact').val();
+
+			$('#sendContact').addClass('hidden');
 			
-		    var c2 = document.getElementById("circle2");
-			c2.className = " circleNumber";
-		    var b2 = document.getElementById("text2");
-			b2.className = " blockText";
+			var setHeader = function (req) { 
+				req.setRequestHeader('content-type', 'application/json'); 
+				req.setRequestHeader('accept', 'application/json');   
+			};
+			$.ajax({
+			  type: "POST",
+			  url: "contact",
+			  beforeSend: setHeader,
+			  data: {email:emailContact, name:nameContact},
+			  success: function(res){
+			    $('#sendContact').removeClass('hidden');
+			    $('#nameContact').val('');
+			    $('#emailContact').val('');
+			    alert('Información enviada correctamente. Pronto lo estaremos contactando.');
+			  },
+			  error: function () {
+			    $('#sendContact').removeClass('hidden');
+			  	alert('No se pudo enviar la información. Porfavor enviar nuevamente.')
+			  }
+			});
+		}
 
-		    var c3 = document.getElementById("circle3");
-			c3.className = " circleNumber";
-		    var b3 = document.getElementById("text3");
-			b3.className = " blockText";
+		function sendReservation(block) {
+			var nameContact = $('#name'+block).val();
+			var emailContact = $('#email'+block).val();
 
-		    var c4 = document.getElementById("circle1");
-			c4.className = " circleNumber";
-		    var b4 = document.getElementById("text1");
-			b4.className = " blockText";
+			$('#send'+block).addClass('hidden');
+			
+			var setHeader = function (req) { 
+				req.setRequestHeader('content-type', 'application/json'); 
+				req.setRequestHeader('accept', 'application/json');   
+			};
 
-
-			var t1 = document.getElementById("bloque4");
-			t1.className = " ";
-			var t2 = document.getElementById("bloque2");
-			t2.className += " hidden";
-			var t3 = document.getElementById("bloque3");
-			t3.className += " hidden";
-			var t4 = document.getElementById("bloque1");
-			t4.className += " hidden"
+			$.ajax({
+			  type: "POST",
+			  url: "reservation",
+			  beforeSend: setHeader,
+			  data: {email:emailContact, name:nameContact},
+			  success: function(res){
+			    $('#send'+block).removeClass('hidden');
+			    $('#name'+block).val('');
+			    $('#email'+block).val('');
+			    alert('Información enviada correctamente. Pronto lo estaremos contactando.');
+			  },
+			  error: function () {
+			    $('#send'+block).removeClass('hidden');
+			    $('#close'+block).click();
+			  	alert('No se pudo enviar la información. Porfavor enviar nuevamente.')
+			  }
+			});
 		}
 	</script>
 	</body>
