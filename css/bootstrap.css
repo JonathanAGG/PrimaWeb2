@@ -6452,9 +6452,9 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.modal-backdrop.fade {
+/* .modal-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -6462,7 +6462,7 @@ button.close {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-
+ */
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;

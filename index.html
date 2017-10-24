@@ -46,7 +46,7 @@
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- <link rel="stylesheet" href="css/flexslider.css"> -->
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
@@ -74,7 +74,7 @@
 
 		.speaker-box:hover .inner-box {
 			opacity: 1;
-			transition: opacity 2s;
+			transition: opacity .8s;
 		}
 
 		.speaker-box .inner-box .text {
@@ -140,7 +140,33 @@
 
 		}
 
-		
+		.modal-speakers .modal-content {
+
+			border-radius: 0px !important;
+
+		}
+
+		.modal-speakers .modal-body {
+			padding: 0px;
+		}
+
+
+		.modal-speakers button.close{
+
+			padding: 10px 25px !important;
+		}
+
+
+		@media (min-width: 768px) {
+
+			.modal-speakers	.modal-dialog {
+				width: 956px;
+				height: 374px;
+				margin: 8% auto;
+			}
+		}
+
+
 	</style>
 </head>
 
@@ -159,6 +185,7 @@
 							<img src="images/logo.png" alt="logo" style="margin: auto">
 						</div>
 						<div class="col-xs-6 col-xs-offset-2  menu-1 menu-wrap" style="margin-top: 1%">
+
 							<ul>
 								<li class="active">
 									<a href="index.html">SOMOS</a>
@@ -248,7 +275,7 @@
 
 					<div class="col-md-3 text-center fh5co-heading wrapper">
 
-						<div class="speaker-box" id="speaker1"  data-toggle="modal" data-target="#modal-speaker-1">
+						<div class="speaker-box" id="speaker1" data-toggle="modal" data-target="#modal-speaker-1">
 
 							<div class="inner-box">
 
@@ -340,7 +367,7 @@
 	<!-- Modals -->
 
 	<!-- Modal 1 -->
-	<div id= "modal-speaker-1" class="modal fade" role="dialog">
+	<div id="modal-speaker-1" class="modal fade modal-speakers" role="dialog">
 		<div class="modal-dialog">
 			<!-- Modal content-->
 			<div class="modal-content" style="color:black;">
@@ -350,14 +377,21 @@
 				</div> -->
 				<div class="modal-body">
 					<div class="row">
-						<div class="col-md-6 text-center">
-							<img src="images/puchaus-01.png" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co"
-							 style="max-width:100%;cursor:pointer;" data-toggle="modal" data-target="#myModal1">
-							<br>
+						<div class="col-md-5 text-center">
+							<img src="images/speaker1-modal.png" class="img-responsive" alt="Speakers">
+
 						</div>
-						<div class="col-md-6 text-center">
-							<p>Éste emprendimiento rockea</p>
-							<br>
+						<div class="col-md-7 text-center">
+
+								<div class="row">
+									<button type="button" class="close" data-dismiss="modal"> <img src="images/btn-close.png" alt=""></button>
+								</div>
+								<div class="row">
+									<h1>THOMAS AGRAIT</h1>
+									<h6>"EL DESPUÉS DE MUCHO ESFUERZO LO LOGRÓ"</h6>
+									<p style="padding: 6% 10%;">Thomas es un empresario, especialista en la optimización de procesos industriales y estudiante de 
+										post-doctorado en neurociencia del MIT.</p>
+								</div>
 						</div>
 					</div>
 
