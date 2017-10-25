@@ -60,19 +60,19 @@
 
 
 	<style>
-		.speaker-box:hover .inner-box {
+		.speaker-box .inner-box {
 
 			height: 100%;
 			width: 100%;
 			opacity: 0;
 			top: 0;
 			left: 0;
-			position: absolute;
+			/* position: absolute; */
 			padding: 0;
 			transition: opacity .1s;
 		}
 
-		.speaker-box .inner-box {
+		.speaker-box:hover .inner-box {
 			opacity: 1;
 			transition: opacity .8s;
 		}
@@ -108,22 +108,24 @@
 			margin-bottom: 30px;
 		}
 
-/* SPEAKER1 */
-		#speaker1:hover {
+		/* SPEAKER1 */
+
+		#speaker1 {
 
 			background: url('images/speakers/speaker1.png');
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 		}
 
-		#speaker1 {
+		#speaker1:hover {
 
 			background: url('images/speakers/speaker1.png'), url('images/speakers/grad.png');
 			background-blend-mode: multiply;
 			background-size: 100% 100%;
 		}
 
-/* SPEAKER1 */
+		/* SPEAKER1 */
+
 		#speaker2 {
 
 			background: url('images/speakers/speaker2.png');
@@ -138,7 +140,8 @@
 			background-size: 100% 100%;
 		}
 
-/* SPEAKER3 */
+		/* SPEAKER3 */
+
 		#speaker3 {
 
 			background: url('images/speakers/speaker2.png');
@@ -153,7 +156,8 @@
 			background-size: 100% 100%;
 		}
 
-/* SPEAKER4 */
+		/* SPEAKER4 */
+
 		#speaker4 {
 
 			background: url('images/speakers/speaker2.png');
@@ -191,14 +195,20 @@
 
 		.speaker-box .inner-box img {
 
-				float: right;
-    			margin: 5%;
+			float: right;
+			margin: 5%;
+
+		}
+
+		.speaker-box .inner-box p {
+
+			margin-top: 55%;
 
 		}
 
 		@media (min-width: 768px) {
 
-			
+
 
 			.modal-speakers .modal-dialog {
 				width: 755px;
@@ -216,12 +226,20 @@
 
 		.speaker-box {
 
-			max-width: 330px;
-			max-height: 300px;
+			max-width: 272px;
+			max-height: 272px;
 
-			
+			min-width: 224px;
+			min-height: 224px;
+
+
 			margin-bottom: 30px;
-		}  
+		}
+		
+		#fh5co-about{
+
+			padding: 7% 0% 5% 0% !important;
+		}
 	</style>
 </head>
 
@@ -286,9 +304,9 @@
 		</header>
 
 		<div id="fh5co-about" class="fh5co-section" style="background-image: url(images/back2.png);background-size: 100% 100%;">
-			<div class="container" style="margin-top: -50px;">
+			<div class="" style="margin: 0% 6% 0% 6%">
 				<div class="row">
-					<div class="col-md-4 img-wrap animate-box" data-animate-effect="fadeInLeft">
+					<div class="col-md-5 img-wrap animate-box" data-animate-effect="fadeInLeft">
 						<div class="section-heading">
 							<h2 style="font-family: Lato;font-style: normal;font-weight: 900;line-height: normal;font-size: 48px;letter-spacing: 2.88px;text-transform: uppercase;color: #FFFFFF;">EL EVENTO</h2>
 							<p style="font-family: Lato;font-style: normal;font-weight: normal;line-height: normal;font-size: 18px;color: #FFFFFF;" id="responsiveText">Momentos difíciles los hemos tenido todos, diferentes personas y organizaciones superaron el miedo, el y los obstáculos
@@ -298,15 +316,29 @@
 							<p style="font-family: Lato;font-style: normal;font-weight: normal;line-height: normal;font-size: 18px;color: #FFFFFF;">Fecha: 19 Noviembre,2017</p>
 						</div>
 					</div>
-					<div class="col-md-8 animate-box">
+					<div class="col-md-6 col-md-offset-1 animate-box">
 						<div id="player"></div>
 					</div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-md-12 img-wrap animate-box text-center section-heading" data-animate-effect="fadeInLeft">
 						<h2 style="color:black">¿Porqué Asistir?</h2>
 						<br>
 						<img src="images/felicidades-01.png" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co"
+						 style="margin:auto;max-height:300px;">
+						<br>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="fh5co-section" style="background:#FFFFFF; padding: 8% 15% 8% 15%">
+
+				 <div class="row">
+					<div class="col-md-12 img-wrap animate-box text-center" data-animate-effect="fadeInLeft">
+<!-- 						<h2 style="color:black">¿Porqué Asistir?</h2>
+						<br> -->
+						<img src="images/why.png" class="img-responsive" alt="Prisma-fest"
 						 style="margin:auto;max-height:300px;">
 						<br>
 					</div>
@@ -332,20 +364,22 @@
 
 						<div class="speaker-box" id="speaker1" data-toggle="modal" data-target="#modal-speaker-1">
 
+
 							<div class="inner-box">
 
-									<img src="images/piruchillo.png" alt="">
+								<img src="images/piruchillo.png" alt="">
 
-									<div class="text content">
-										<p>
-											<span class="text-title">
-												<b>ANDREA</b> SAN GIL </span>
-											<span class="text-content">
-												<br>Centro para la Sostenibilidad
-												<br> Urbana </span>
-										</p>
-									</div>
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>ANDREA</b> SAN GIL </span>
+										<span class="text-content">
+											<br>Centro para la Sostenibilidad
+											<br> Urbana </span>
+									</p>
+
 								</div>
+							</div>
 						</div>
 
 					</div>
@@ -353,22 +387,20 @@
 
 						<div class="speaker-box" id="speaker2" data-toggle="modal" data-target="#modal-speaker-2">
 
+
 							<div class="inner-box">
 
-								<div class="row">
-									<img src="images/piruchillo.png" alt="">
-								</div>
+								<img src="images/piruchillo.png" alt="">
 
 								<div class="row">
-									<div class="text">
-										<p>
-											<span class="text-title">
-												<b>ANDREA</b> SAN GIL </span>
-											<span class="text-content">
-												<br>Centro para la Sostenibilidad
-												<br> Urbana </span>
-										</p>
-									</div>
+									<p>
+										<span class="text-title">
+											<b>ANDREA</b> SAN GIL </span>
+										<span class="text-content">
+											<br>Centro para la Sostenibilidad
+											<br> Urbana </span>
+									</p>
+
 								</div>
 							</div>
 						</div>
@@ -378,22 +410,20 @@
 
 						<div class="speaker-box" id="speaker3" data-toggle="modal" data-target="#modal-speaker-3">
 
+
 							<div class="inner-box">
 
-								<div class="row">
-									<img src="images/piruchillo.png" alt="">
-								</div>
+								<img src="images/piruchillo.png" alt="">
 
 								<div class="row">
-									<div class="text">
-										<p>
-											<span class="text-title">
-												<b>ANDREA</b> SAN GIL </span>
-											<span class="text-content">
-												<br>Centro para la Sostenibilidad
-												<br> Urbana </span>
-										</p>
-									</div>
+									<p>
+										<span class="text-title">
+											<b>ANDREA</b> SAN GIL </span>
+										<span class="text-content">
+											<br>Centro para la Sostenibilidad
+											<br> Urbana </span>
+									</p>
+
 								</div>
 							</div>
 						</div>
@@ -403,22 +433,20 @@
 
 						<div class="speaker-box" id="speaker4" data-toggle="modal" data-target="#modal-speaker-4">
 
+
 							<div class="inner-box">
 
-								<div class="row">
-									<img src="images/piruchillo.png" alt="">
-								</div>
+								<img src="images/piruchillo.png" alt="">
 
 								<div class="row">
-									<div class="text">
-										<p>
-											<span class="text-title">
-												<b>ANDREA</b> SAN GIL </span>
-											<span class="text-content">
-												<br>Centro para la Sostenibilidad
-												<br> Urbana </span>
-										</p>
-									</div>
+									<p>
+										<span class="text-title">
+											<b>ANDREA</b> SAN GIL </span>
+										<span class="text-content">
+											<br>Centro para la Sostenibilidad
+											<br> Urbana </span>
+									</p>
+
 								</div>
 							</div>
 						</div>
