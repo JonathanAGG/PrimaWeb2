@@ -1874,8 +1874,20 @@ textarea {
   padding: 10px 20px;
   margin-top: -10px;
 }
+.prismaButton2{
+  background: linear-gradient(65.95deg, #012DFE 8.09%, #02FFD3 110.65%);
+  border-radius: 2px;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  margin-top: -10px;
+}
 .confRow{
   border-top: 1px solid #AF02FA;
+}
+.workRow{
+  border-top: 1px solid #085DFD;
+  padding-top: 20px;
 }
 
 a{
