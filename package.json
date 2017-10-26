@@ -1,0 +1,21 @@
+{
+  "name": "PrismaServer",
+  "version": "0.1.0",
+  "description": "Prisma Server",
+  "main": "server.js",
+  "engines": {
+    "node": "6.11.0",
+    "npm": "3.10.10"
+  },
+  "authors": [
+    "ImagineXYZ - Adrián Sánchez"
+  ],
+  "dependencies": {
+    "express": "3.x",
+    "cookie-parser": "*",
+    "body-parser": "*",
+    "mongodb": "*",
+    "nodemailer": "0.7.1",
+    "cors": "*"
+  }
+}
