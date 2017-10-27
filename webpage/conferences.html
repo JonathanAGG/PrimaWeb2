@@ -408,7 +408,7 @@
 				req.setRequestHeader('accept', 'application/json');   
 			};
 			
-			var data = JSON.stringify({email:emailContact, name:nameContact});
+			var data = JSON.stringify({email:emailContact, name:nameContact, conf:'conf'+block});
 
 			$.ajax({
 			  type: "POST",
@@ -416,15 +416,17 @@
 			  beforeSend: setHeader,
 			  data: data,
 			  success: function(res){
+			  	console.log(res);
 			    $('#send'+block).removeClass('hidden');
 			    $('#name'+block).val('');
 			    $('#email'+block).val('');
 			    $('#close'+block).click();
 			    alert('Información enviada correctamente. Pronto lo estaremos contactando.');
 			  },
-			  error: function () {
+			  error: function (error) {
+			  	console.log(error.responseJSON);
 			    $('#send'+block).removeClass('hidden');
-			  	alert('No se pudo enviar la información. Porfavor enviar nuevamente.')
+			  	alert(error.responseJSON.error);
 			  }
 			});
 		}

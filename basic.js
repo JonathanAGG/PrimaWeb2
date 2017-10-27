@@ -107,8 +107,46 @@ exports.reservationWorkshop = (req, res) => {
 }
 
 exports.reservationConference = (req, res) => {
-    console.log(req.body);
-    res.send(200, true);
+    db.collection('reservations').find({_id:req.body.conf, $where:"this.signed.length < this.max"}).toArray((error, doc) => {
+        if(error) {throw error; res.send(400, {error:'Hemos tenido un error, favor solicitar la reserva nuevamente'})}
+        else if(doc[0] === undefined) res.send(400, {error:'No quedan campos libres en la conferencia.'});
+        else{
+            let user = {email:req.body.email};
+            user[req.body.conf] = true;
+            db.collection('users').find(user).toArray((error2, doc2) => {
+                if(error2) {throw error2; res.send(400, {error:'Hemos tenido un error, favor solicitar la reserva nuevamente'})}
+                else if(doc2[0] !== undefined) res.send(400, {error:'Usted ya se encuentra inscrito pero todo bien.'});
+                else{
+                    user['name'] = req.body.name;
+                    db.collection('users').findAndModify({email:req.body.email},{},{$set:user}, {upsert: true, new: true}, (error3, doc3) => {
+                        if(error3) {throw error3; res.send(400, {error:'Hemos tenido un error, favor solicitar la reserva nuevamente'})}
+                        else{
+                            db.collection('reservations').findAndModify({_id:req.body.conf},{},{$push:{signed:req.body.email}}, (error4, doc4) => {
+                                if(error4) {throw error4; res.send(400, {error:'Hemos tenido un error, favor solicitar la reserva nuevamente'})}
+                                else{
+                                    let htmlText = '<div style="background:#F2F2F2"> <div id="div1" style=" background:#000000; text-align:center; max-width: 70%; margin: auto;"> <img style=" margin-top: 50px; width: 12%; margin-left: 72%;" src="https://prismafest.herokuapp.com/puchaus-02.png"> <img src="https://prismafest.herokuapp.com/felicidades-01.png" style="width:60%;"> <h3 style=" margin: 0px; font-size: 130%; font-family: lato; font-weight: 500; color: white; letter-spacing: 5px;">SOS DE LOS QUE SE ATREVEN</h3> <img style=" width: 12%; margin-right: 72%; margin-bottom: 50px;" src="https://prismafest.herokuapp.com/puchaus-01.png"> </div> <div id="div2" style=" background:#FFFFFF; text-align:center; max-width: 70%; margin: auto;">  <div style="display:inline-flex;"><h2 style="margin: 0px; margin-left:45px; padding-top: 80px; margin-bottom: 40px; font-size: 25px; font-family: lato; font-weight: bold; color: black; letter-spacing: 5px;">¡ESTÁS CONFIRMADO!</h2><img style=" max-height: 25px; padding-top: 80px;" src="https://prismafest.herokuapp.com/puchaus-03.png"></div> <p style="  margin: auto; margin-bottom: 40px; font-size: 18px; font-family: lato; font-weight: 500; color: #424242; width: 90%;">Bienvenido ' + req.body.name+'. Estamos contentos de contar con su presencia en el evento.</p><p style="  margin: auto; padding-bottom: 40px; font-size: 18px; font-family: lato; font-weight: 500; color: #424242; width: 90%;">Le confirmamos la reservación de su espacio en la conferencia <b>'+doc4.value.description+'</b>. Nos vemos el día del evento.</p> </div> <div id="div3" style=" background:#F2F2F2; text-align:center; max-width: 70%; margin: auto;"> <a style="text-decoration: none; margin-left: 98%;" href="https://www.facebook.com/prismafest.cr/" target="_blank"><img style=" max-height: 20px; margin-right: 10px; margin-top: 10px; cursor: pointer;" src="https://prismafest.herokuapp.com/puchaus-05.png"></a> <br> <img style=" max-height: 100px; margin-top: 40px; margin-bottom: 30px;" src="https://prismafest.herokuapp.com/puchaus-06.png"> <br> <div style="height:80px;"> <a style="text-decoration: none; color: #999999; cursor: pointer; font-family: lato; font-size: 20px;" href="https://prismafest.com/" target="_blank">www.prismafest.com</a> </div> </div> </div>',
+                                    mailOptions = {
+                                      from: '"Prisma Fest" <info@prismafest.com>',
+                                      to: req.body.email, // receiver
+                                      subject: 'Prisma Fest', // subject
+                                      html: htmlText
+                                    };
+                                    gmailTransporter(function (transporter) {
+                                        transporter.sendMail(mailOptions, function(error, info){
+                                          console.log('Enviando Email');
+                                          if(error)console.log(error);
+                                          else console.log(info);
+                                          res.send(200,{info:'Message Sent'} ); 
+                                        })
+                                    })
+                                }
+                            })
+                        }
+                    });
+                }
+            })
+        }
+    })
 }
 
 exports.getNow = (req,res) => {
