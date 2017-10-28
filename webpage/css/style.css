@@ -1957,70 +1957,7 @@ b{
         margin-bottom: 30px;
       }
   
-      /* SPEAKER1 */
-  
-      #speaker1 {
-  
-        background: url('../images/speakers/speaker1.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-      }
-  
-      #speaker1:hover {
-  
-        background: url('../images/speakers/speaker1.png'), url('../images/speakers/grad.png');
-        background-blend-mode: multiply;
-        background-size: 100% 100%;
-      }
-  
-      /* SPEAKER1 */
-  
-      #speaker2 {
-  
-        background: url('../images/speakers/speaker2.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-      }
-  
-      #speaker2:hover {
-  
-        background: url('../images/speakers/speaker2.png'), url('../images/speakers/grad.png');
-        background-blend-mode: multiply;
-        background-size: 100% 100%;
-      }
-  
-      /* SPEAKER3 */
-  
-      #speaker3 {
-  
-        background: url('../images/speakers/speaker2.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-      }
-  
-      #speaker3:hover {
-  
-        background: url('../images/speakers/speaker2.png'), url('../images/speakers/grad.png');
-        background-blend-mode: multiply;
-        background-size: 100% 100%;
-      }
-  
-      /* SPEAKER4 */
-  
-      #speaker4 {
-  
-        background: url('../images/speakers/speaker2.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-      }
-  
-      #speaker4:hover {
-  
-        background: url('../images/speakers/speaker2.png'), url('../images/speakers/grad.png');
-        background-blend-mode: multiply;
-        background-size: 100% 100%;
-      }
-  
+
       .speaker-box .inner-box .text-content {
         font-size: 15px;
   
@@ -2039,7 +1976,7 @@ b{
   
       .modal-speakers button.close {
   
-        margin: 2% 7%;
+        margin: 2% 2%;
       }
   
       .speaker-box .inner-box img {
@@ -2167,9 +2104,83 @@ b{
         background-size: 100% 100%;
       }
 
+      .content-speaker{
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+			.desc-speakers{
 
+				padding: 6% 10%
 
+      }
+      
+/*    ---------------       SPEAKERS    ---------------------  */
 
+      /* SPEAKER1 */
+  
+      #speaker1 {
+        
+              background: url('../images/speakers/s1.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+        
+            #speaker1:hover {
+        
+              background: url('../images/speakers/s1.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+      
+  
+      /* SPEAKER2 */
+  
+      #speaker2 {
+        
+              background: url('../images/speakers/s2.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+        
+            #speaker2:hover {
+        
+              background: url('../images/speakers/s2.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+        
+            /* SPEAKER3 */
+        
+            #speaker3 {
+        
+              background: url('../images/speakers/s3.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+        
+            #speaker3:hover {
+        
+              background: url('../images/speakers/s3.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+        
+            /* SPEAKER4 */
+        
+            #speaker4 {
+        
+              background: url('../images/speakers/s4.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+        
+            #speaker4:hover {
+        
+              background: url('../images/speakers/s4.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+        
 
 
 
