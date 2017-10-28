@@ -229,7 +229,7 @@
 					<h3 style="color:white;font-weight:bold;margin-bottom:5px;">APÚNTATE A LO</h3>
 					<h2 style="background: -webkit-linear-gradient(226.13deg, #00E9FF 50%, #D300FF 100%);-webkit-background-clip:text;-webkit-text-fill-color: transparent;font-weight:bolder;margin-bottom:5px;">DESCONOCIDO</h2>
 					<input type="text" id="nameContact" style="width:100%;" placeholder="Nombre">
-					<input type="email" id="emailContact" style="width:100%;margin-top:5px;" placeholder="Correo">
+					<input  name="email" type="email" id="emailContact" style="width:100%;margin-top:5px;" placeholder="Correo">
 					<button class="prismaButton"  id="sendContact" onclick="sendContact()" style="float:right;margin-top:10px;padding:5px 20px;">ENVIAR</button>
 					<div style="display:flex;margin-top:60px;">
 						<b style="color:white;">Contacto:</b>
@@ -265,7 +265,7 @@
 							<input type="text" id="name1" style="width:60%;border:none;border-bottom:1px solid #AF02FA;font-size:large;margin-bottom: 20px;" placeholder="Nombre">
 						</div>
 						<div class="col-md-12 text-center">
-							<input type="text" id="email1" style="width:60%;border:none;border-bottom:1px solid #AF02FA;font-size:large;" placeholder="Correo">
+							<input  name="email" type="email" id="email1" style="width:60%;border:none;border-bottom:1px solid #AF02FA;font-size:large;" placeholder="Correo">
 						</div>
 						<div class="col-md-12 text-center">
 							<button class="prismaButton"  id="send1" onclick="sendReservation(1)" style="margin-top:20px;">RESERVAR BLOQUE</button>
@@ -379,11 +379,14 @@
 				req.setRequestHeader('content-type', 'application/json'); 
 				req.setRequestHeader('accept', 'application/json');   
 			};
+
+			var data = JSON.stringify({email:emailContact, name:nameContact});
+
 			$.ajax({
 			  type: "POST",
 			  url: "contact",
 			  beforeSend: setHeader,
-			  data: {email:emailContact, name:nameContact},
+			  data: data,
 			  success: function(res){
 			    $('#sendContact').removeClass('hidden');
 			    $('#nameContact').val('');

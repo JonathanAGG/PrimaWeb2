@@ -258,11 +258,14 @@
 				req.setRequestHeader('content-type', 'application/json'); 
 				req.setRequestHeader('accept', 'application/json');   
 			};
+
+			var data = JSON.stringify({email:emailContact, name:nameContact});
+
 			$.ajax({
 			  type: "POST",
 			  url: "contact",
 			  beforeSend: setHeader,
-			  data: {email:emailContact, name:nameContact},
+			  data: data,
 			  success: function(res){
 			    $('#sendContact').removeClass('hidden');
 			    $('#nameContact').val('');
