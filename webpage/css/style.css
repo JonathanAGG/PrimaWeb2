@@ -1906,11 +1906,266 @@ b{
 
 
 
+/* INDEX */
 
 
+.speaker-box .inner-box {
+  
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        /* position: absolute; */
+        padding: 0;
+        transition: opacity .1s;
+      }
+  
+      .speaker-box:hover .inner-box {
+        opacity: 1;
+        transition: opacity .8s;
+      }
+  
+      .speaker-box .inner-box .text {
+        color: #fff;
+        line-height: 150px;
+        font-family: 'arial';
+        text-align: start;
+        margin-top: 100px;
+        margin-left: 20%
+      }
+  
+      .speaker-box .inner-box img {
+  
+        width: 39px;
+        height: 32px;
+        margin: 20px 295px;
+  
+      }
+  
+      .animate-box img {
+  
+        width: 100%;
+        cursor: pointer;
+      }
+  
+  
+      .speaker-box {
+  
+        width: 100%;
+        height: 262px;
+        margin-bottom: 30px;
+      }
+  
+      /* SPEAKER1 */
+  
+      #speaker1 {
+  
+        background: url('../images/speakers/speaker1.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+  
+      #speaker1:hover {
+  
+        background: url('../images/speakers/speaker1.png'), url('../images/speakers/grad.png');
+        background-blend-mode: multiply;
+        background-size: 100% 100%;
+      }
+  
+      /* SPEAKER1 */
+  
+      #speaker2 {
+  
+        background: url('../images/speakers/speaker2.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+  
+      #speaker2:hover {
+  
+        background: url('../images/speakers/speaker2.png'), url('../images/speakers/grad.png');
+        background-blend-mode: multiply;
+        background-size: 100% 100%;
+      }
+  
+      /* SPEAKER3 */
+  
+      #speaker3 {
+  
+        background: url('../images/speakers/speaker2.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+  
+      #speaker3:hover {
+  
+        background: url('../images/speakers/speaker2.png'), url('../images/speakers/grad.png');
+        background-blend-mode: multiply;
+        background-size: 100% 100%;
+      }
+  
+      /* SPEAKER4 */
+  
+      #speaker4 {
+  
+        background: url('../images/speakers/speaker2.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+  
+      #speaker4:hover {
+  
+        background: url('../images/speakers/speaker2.png'), url('../images/speakers/grad.png');
+        background-blend-mode: multiply;
+        background-size: 100% 100%;
+      }
+  
+      .speaker-box .inner-box .text-content {
+        font-size: 15px;
+  
+      }
+  
+      .modal-speakers .modal-content {
+  
+        border-radius: 0px !important;
+  
+      }
+  
+      .modal-speakers .modal-body {
+        padding: 0px;
+      }
+  
+  
+      .modal-speakers button.close {
+  
+        margin: 2% 7%;
+      }
+  
+      .speaker-box .inner-box img {
+  
+        float: right;
+        margin: 5%;
+  
+      }
+  
+      .speaker-box .inner-box p {
+  
+        margin-top: 55%;
+  
+      }
+  
+      @media (min-width: 768px) {
+  
+  
+  
+        .modal-speakers .modal-dialog {
+          width: 755px;
+          margin: 8% auto;
+        }
+      }
+  
+      @media (max-width: 767px) {
+  
+        .modal-speakers .modals-img img {
+          margin: 4% auto
+        }
+  
+        .modal-speakers .modals-img {
+          padding-left: 8px;
+          padding-right: 8px;
+        }
+  
+      }
+  
+  
+    
+  
+  
+      .speaker-box {
+  
+        max-width: 272px;
+        max-height: 272px;
+  
+        min-width: 224px;
+        min-height: 224px;
+  
+  
+        margin-bottom: 30px;
+      }
+  
+      #fh5co-about {
+  
+        padding: 7% 0% 5% 0% !important;
+      }
+  
+      #fh5co-why p {
+        color: black;
+      }
+  
+      #fh5co-why .title {
+        margin-bottom: 5%
+      }
+  
+      #fh5co-why img {
+        margin-bottom: 3%
+      }
+  
+      /* ............................................................ */
+  
+  
+      #fh5co-inn {
+  
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        float: left;
+        width: 100%;
+  
+      }
+  
+  
+      #fh5co-inn .imgs {
+  
+        padding: 0% 15% 2% 15%;
+  
+      }
+  
+  
+      #fh5co-inn .category img {
+  
+        margin-bottom: 15%;
+        width: 80px;
+        height: 80px
+      }
+  
+      #fh5co-inn .invite img {
+  
+        margin-bottom: 40%;
+        max-width: 207px;
+        max-height: 50px
+      }
+  
+      #fh5co-inn .org img {
+  
+        margin-bottom: 40%;
+        max-width: 207px;
+        max-height: 50px
+      }
+  
+      .modals-img{
+  
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+      
 
 
-
+      #fh5co-header{
+        background-image: url("../images/header.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
 
 
 

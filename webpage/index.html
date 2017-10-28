@@ -59,295 +59,102 @@
 	<![endif]-->
 
 
-	<style>
-		.speaker-box .inner-box {
-
-			height: 100%;
-			width: 100%;
-			opacity: 0;
-			top: 0;
-			left: 0;
-			/* position: absolute; */
-			padding: 0;
-			transition: opacity .1s;
-		}
-
-		.speaker-box:hover .inner-box {
-			opacity: 1;
-			transition: opacity .8s;
-		}
-
-		.speaker-box .inner-box .text {
-			color: #fff;
-			line-height: 150px;
-			font-family: 'arial';
-			text-align: start;
-			margin-top: 100px;
-			margin-left: 20%
-		}
-
-		.speaker-box .inner-box img {
-
-			width: 39px;
-			height: 32px;
-			margin: 20px 295px;
-
-		}
-
-		.animate-box img {
-
-			width: 100%;
-			cursor: pointer;
-		}
-
-
-		.speaker-box {
-
-			width: 100%;
-			height: 262px;
-			margin-bottom: 30px;
-		}
-
-		/* SPEAKER1 */
-
-		#speaker1 {
-
-			background: url('images/speakers/speaker1.png');
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-		}
-
-		#speaker1:hover {
-
-			background: url('images/speakers/speaker1.png'), url('images/speakers/grad.png');
-			background-blend-mode: multiply;
-			background-size: 100% 100%;
-		}
-
-		/* SPEAKER1 */
-
-		#speaker2 {
-
-			background: url('images/speakers/speaker2.png');
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-		}
-
-		#speaker2:hover {
-
-			background: url('images/speakers/speaker2.png'), url('images/speakers/grad.png');
-			background-blend-mode: multiply;
-			background-size: 100% 100%;
-		}
-
-		/* SPEAKER3 */
-
-		#speaker3 {
-
-			background: url('images/speakers/speaker2.png');
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-		}
-
-		#speaker3:hover {
-
-			background: url('images/speakers/speaker2.png'), url('images/speakers/grad.png');
-			background-blend-mode: multiply;
-			background-size: 100% 100%;
-		}
-
-		/* SPEAKER4 */
-
-		#speaker4 {
-
-			background: url('images/speakers/speaker2.png');
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-		}
-
-		#speaker4:hover {
-
-			background: url('images/speakers/speaker2.png'), url('images/speakers/grad.png');
-			background-blend-mode: multiply;
-			background-size: 100% 100%;
-		}
-
-		.speaker-box .inner-box .text-content {
-			font-size: 15px;
-
-		}
-
-		.modal-speakers .modal-content {
-
-			border-radius: 0px !important;
-
-		}
-
-		.modal-speakers .modal-body {
-			padding: 0px;
-		}
-
-
-		.modal-speakers button.close {
-
-			padding: 10px 25px !important;
-		}
-
-		.speaker-box .inner-box img {
-
-			float: right;
-			margin: 5%;
-
-		}
-
-		.speaker-box .inner-box p {
-
-			margin-top: 55%;
-
-		}
-
-		@media (min-width: 768px) {
-
-
-
-			.modal-speakers .modal-dialog {
-				width: 755px;
-				margin: 8% auto;
-			}
-		}
-
-		@media (max-width: 767px) {
-
-			.modal-speakers .modals-img img {
-				margin: 4% auto
-			}
-
-		}
-
-		.speaker-box {
-
-			max-width: 272px;
-			max-height: 272px;
-
-			min-width: 224px;
-			min-height: 224px;
-
-
-			margin-bottom: 30px;
-		}
-
-		#fh5co-about {
-
-			padding: 7% 0% 5% 0% !important;
-		}
-
-		#fh5co-why p{
-			color: black;
-		}
-
-		#fh5co-why .title{
-			margin-bottom: 5%
-		}
-
-		#fh5co-why img{
-			margin-bottom: 3%
-		}
-	</style>
 </head>
 
-<body>
-
-	<div class="fh5co-loader"></div>
-
-	<div id="page">
-		<nav class="fh5co-nav" role="navigation">
-			<div class="top-menu">
-				<!-- <div class="container"> -->
-				<div>
-					<div class="row">
-						<div class="col-xs-2 col-xs-offset-1 text-center logo-wrap">
-							<!-- <div id="fh5co-logo"><a href="index.html">Logo Prisma<span>.</span></a></div> -->
-							<img src="images/logo.png" alt="logo" style="margin: auto">
+<body style="color:black;">
+	
+		<div class="fh5co-loader"></div>
+	
+		<div id="page">
+			<nav class="fh5co-nav" role="navigation">
+				<div class="top-menu">
+					<!-- <div class="container"> -->
+					<div>
+						<div class="row">
+							<div class="col-xs-2 col-xs-offset-1 text-center logo-wrap">
+								<!-- <div id="fh5co-logo"><a href="index.html">Logo Prisma<span>.</span></a></div> -->
+								<img src="images/logo.png" alt="logo" style="margin: auto">
+							</div>
+							<div class="col-xs-6 col-xs-offset-2  menu-1 menu-wrap" style="margin-top: 1%">
+								<ul>
+									<li class="active">
+										<a href="index.html">SOMOS</a>
+									</li>
+									<li>
+										<a href="menu.html">SPEAKERS</a>
+									</li>
+									<li>
+										<a href="conferences.html">CONFERENCIAS</a>
+									</li>
+									<li>
+										<a href="about.html">TALLERES</a>
+									</li>
+									<li>
+										<a href="contact.html">INNOVADORES</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div class="col-xs-6 col-xs-offset-2  menu-1 menu-wrap" style="margin-top: 1%">
-							<ul>
-								<li class="active">
-									<a href="index.html">SOMOS</a>
-								</li>
-								<li>
-									<a href="menu.html">SPEAKERS</a>
-								</li>
-								<li>
-									<a href="conferences.html">CONFERENCIAS</a>
-								</li>
-								<li>
-									<a href="about.html">TALLERES</a>
-								</li>
-								<li>
-									<a href="contact.html">INNOVADORES</a>
-								</li>
-							</ul>
-						</div>
+	
 					</div>
-
 				</div>
-			</div>
-		</nav>
-
-		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(images/header.png); background-size: 100% 100%;"
-		 data-stellar-background-ratio="0.5">
-
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="display-t js-fullheight">
-							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn" id="content-header">
-								<p>TOMA RIESGOS Y ATRÉVETE A </p>
-								<img src="images/innovar.png" alt="" class="img-responsive" style="display: inline">
-								<p>19 NOVIEMBRE, 2017</p>
-								<p>MUSEO DE LOS NIÑOS</p>
+			</nav>
+	
+			<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" data-stellar-background-ratio="0.5">
+	
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<div class="display-t js-fullheight">
+								<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn" id="content-header">
+									<p>TOMA RIESGOS Y ATRÉVETE A </p>
+									<img src="images/innovar.png" alt="" class="img-responsive" style="display: inline;padding: 0% 10%;">
+									<p>19 NOVIEMBRE, 2017</p>
+									<p>MUSEO DE LOS NIÑOS</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</header>
-
-		<div id="fh5co-about" class="fh5co-section" style="background-image: url(images/back2.png);background-size: 100% 100%;">
-			<div class="" style="margin: 0% 6% 0% 6%">
-				<div class="row">
-					<div class="col-md-5 img-wrap animate-box" data-animate-effect="fadeInLeft">
-						<div class="section-heading">
-							<h2 style="font-family: Lato;font-style: normal;font-weight: 900;line-height: normal;font-size: 48px;letter-spacing: 2.88px;text-transform: uppercase;color: #FFFFFF;">EL EVENTO</h2>
-							<p style="font-family: Lato;font-style: normal;font-weight: normal;line-height: normal;font-size: 18px;color: #FFFFFF;" id="responsiveText">Momentos difíciles los hemos tenido todos, diferentes personas y organizaciones superaron el miedo, el y los obstáculos
-								presentes en el camino de la incertidumbre. Prisma Innovation Fest es un espacio para apuntarse, crecer y aprender
-								de lo desconocido donde las ideas innovadoras se pueden llevar a la realidad.</p>
-							<p style="font-family: Lato;font-style: normal;font-weight: normal;line-height: normal;font-size: 18px;color: #FFFFFF;">Lugar: Museo de los Niños</p>
-							<p style="font-family: Lato;font-style: normal;font-weight: normal;line-height: normal;font-size: 18px;color: #FFFFFF;">Fecha: 19 Noviembre,2017</p>
+			</header>
+	
+	
+			<div id="fh5co-about" class="fh5co-section" style="background-image: url(images/back2.png);background-size: 100% 100%;">
+				<div class="" style="margin: 0% 6% 0% 6%">
+					<div class="row">
+						<div class="col-md-5 img-wrap animate-box" data-animate-effect="fadeInLeft">
+							<div class="section-heading">
+								<h2 style="font-family: Lato;font-style: normal;font-weight: 900;line-height: normal;font-size: 48px;letter-spacing: 2.88px;text-transform: uppercase;color: #FFFFFF;">EL EVENTO</h2>
+								<p style="font-family: Lato;font-style: normal;font-weight: normal;line-height: normal;font-size: 18px;color: #FFFFFF;" id="responsiveText">Momentos difíciles los hemos tenido todos, diferentes personas y organizaciones superaron el
+									miedo, el y los obstáculos presentes en el camino de la incertidumbre. Prisma Innovation
+									Fest es un espacio para apuntarse, crecer y aprender de lo desconocido donde las ideas innovadoras
+									se pueden llevar a la realidad.</p>
+								<p style="font-family: Lato;font-style: normal;font-weight: normal;line-height: normal;font-size: 18px;color: #FFFFFF;">Lugar: Museo de los Niños</p>
+								<p style="font-family: Lato;font-style: normal;font-weight: normal;line-height: normal;font-size: 18px;color: #FFFFFF;">Fecha: 19 Noviembre,2017</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-md-offset-1 animate-box">
+							<div id="player"></div>
 						</div>
 					</div>
-					<div class="col-md-6 col-md-offset-1 animate-box">
-						<div id="player"></div>
+				</div>
+			</div>
+	
+			<div id="fh5co-why" class="fh5co-section" style="background:#FFFFFF; padding: 8% 15% 8% 15%">
+	
+				<div class="row">
+					<div class="text-center title">
+						<h3>¿PORQUÉ ASISTIR?</h3>
 					</div>
 				</div>
-			</div>
-		</div>
-
-		<div id="fh5co-why"class="fh5co-section" style="background:#FFFFFF; padding: 8% 15% 8% 15%">
-
-			<div  class="row">
-				<div class="text-center title">
-					<h3>¿PORQUÉ ASISTIR?</h3>
-				</div>
-			</div>
-			<div class="row">
-
+				<div class="row">
+	
 					<div class="col-md-4 text-center">
-						
+	
 						<img src="images/why1.png" alt="PrismaFest">
 						<p>UN LUGAR PARA INSPIRARSE</p>
-						
+	
 					</div>
 					<div class="col-md-4 text-center">
 						<img src="images/why2.png" alt="PrismaFest">
@@ -357,722 +164,493 @@
 						<img src="images/why3.png" alt="PrismaFest">
 						<p>HABRÁN MUCHAS SORPRESAS</p>
 					</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-4 fh5co-heading">
-					<h1 style="font-family: Lato;font-style: normal;font-weight: bold;line-height: normal;font-size: 48px;color: #FFFFFF;">EXPOSITORES</h1>
-					<p style="font-family: Lato;font-style: normal;font-weight: bold;line-height: normal;font-size: 18px;color: #FFFFFF;">LOS QUE SE ATREVIERON</p>
-					<p>Ellos enfrentaron muchos retos, fallaron y arriesgaron todo por cumplir su sueño. El camino fue dificil, pero al final
-						lograron salir de la oscuridad. Ahora ellos desean compartir su experiencia contigo.</p>
 				</div>
 			</div>
-			<div class="row animate-box">
-
-
-				<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
-
-					<div class="speaker-box" id="speaker1" data-toggle="modal" data-target="#modal-speaker-1">
-
-
-						<div class="inner-box">
-
-							<img src="images/piruchillo.png" alt="">
-
-							<div class="row">
-								<p>
-									<span class="text-title">
-										<b>ANDREA</b> SAN GIL </span>
-									<span class="text-content">
-										<br>Centro para la Sostenibilidad
-										<br> Urbana </span>
-								</p>
-
-							</div>
+	
+	
+			<div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row animate-box">
+						<div class="col-md-4 fh5co-heading">
+							<h1 style="font-family: Lato;font-style: normal;font-weight: bold;line-height: normal;font-size: 48px;color: #FFFFFF;">EXPOSITORES</h1>
+							<p style="font-family: Lato;font-style: normal;font-weight: bold;line-height: normal;font-size: 18px;color: #FFFFFF;">LOS QUE SE ATREVIERON</p>
+							<p>Ellos enfrentaron muchos retos, fallaron y arriesgaron todo por cumplir su sueño. El camino fue dificil,
+								pero al final lograron salir de la oscuridad. Ahora ellos desean compartir su experiencia contigo.</p>
 						</div>
 					</div>
-
-				</div>
-				<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
-
-					<div class="speaker-box" id="speaker2" data-toggle="modal" data-target="#modal-speaker-2">
-
-
-						<div class="inner-box">
-
-							<img src="images/piruchillo.png" alt="">
-
-							<div class="row">
-								<p>
-									<span class="text-title">
-										<b>ANDREA</b> SAN GIL </span>
-									<span class="text-content">
-										<br>Centro para la Sostenibilidad
-										<br> Urbana </span>
-								</p>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
-
-					<div class="speaker-box" id="speaker3" data-toggle="modal" data-target="#modal-speaker-3">
-
-
-						<div class="inner-box">
-
-							<img src="images/piruchillo.png" alt="">
-
-							<div class="row">
-								<p>
-									<span class="text-title">
-										<b>ANDREA</b> SAN GIL </span>
-									<span class="text-content">
-										<br>Centro para la Sostenibilidad
-										<br> Urbana </span>
-								</p>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
-
-					<div class="speaker-box" id="speaker4" data-toggle="modal" data-target="#modal-speaker-4">
-
-
-						<div class="inner-box">
-
-							<img src="images/piruchillo.png" alt="">
-
-							<div class="row">
-								<p>
-									<span class="text-title">
-										<b>ANDREA</b> SAN GIL </span>
-									<span class="text-content">
-										<br>Centro para la Sostenibilidad
-										<br> Urbana </span>
-								</p>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-4 text-center fh5co-heading">
-
-
-
-
-				</div>
-
-
-				<!-- <div class="col-md-4 text-center fh5co-heading">
-						<img src="images/puchaus-03.png" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co"
-						 style="width:100%;cursor:pointer;" data-toggle="modal" data-target="#myModal5">
-						<br>
-					</div>
-					<div class="col-md-4 text-center fh5co-heading">
-						<img src="images/puchaus-01.png" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co"
-						 style="width:100%;cursor:pointer;" data-toggle="modal" data-target="#myModal6">
-						<br>
-					</div> -->
-
-			</div>
-
-		</div>
-	</div>
-
-<!-- ...................................................................................................................................................... -->
-
-	<div id="fh5co-started" class="fh5co-section animate-box">
-
-				<div class="row">
-						<div class="col-md-12 fh5co-heading animate-box">
-							<div> <img src="images/back5.png" alt="" class="img-responsive" style="max-width:300px; float: right"></div>
-							
-							
-							<div class="row" style="margin: 5%">
-		
-								<div class="col-md-7">
-										<h2 style="background: -webkit-linear-gradient(226.13deg, #FD0E16 3.77%, #FD0ED4 100%);-webkit-background-clip:text;
-										-webkit-text-fill-color: transparent;font-weight:bolder">INNOVADORES</h2>
-			
-										<h4>ELLOS ESTÁN CAMBIANDO EL MUNDO</h4>
-			
-										<p style="color: black">Se adentraron en un mundo desconocido y enfrentaron diversos obstáculos para llevar su idea a la realidad. 
-											Ellos resolvieron grandes retos de las siguiente categorías y ahora son referentes a nivel de emprendimiento e innovación. 
-											¡Ven a conocer sus proyectos!.</p>
-								</div>
-		
-									
-		
-							</div>
-						</div>
-		
-						<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-							<div class="fh5co-item">
-								<img src="images/gallery_9.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-								<h3>Bake Potato Pizza</h3>
-								<span class="fh5co-price">$20
-									<sup>.50</sup>
-								</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias
-									vel suscipit explicabo.</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-							<div class="fh5co-item margin_top">
-								<img src="images/gallery_8.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-								<h3>Salted Fried Chicken</h3>
-								<span class="fh5co-price">$19
-									<sup>.00</sup>
-								</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias
-									vel suscipit explicabo.</p>
-							</div>
-						</div>
-						<div class="clearfix visible-sm-block visible-xs-block"></div>
-						<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-							<div class="fh5co-item">
-								<img src="images/gallery_7.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-								<h3>Italian Sauce Mushroom</h3>
-								<span class="fh5co-price">$17
-									<sup>.99</sup>
-								</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias
-									vel suscipit explicabo.</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-							<div class="fh5co-item margin_top">
-								<img src="images/gallery_6.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-								<h3>Fried Potato w/ Garlic</h3>
-								<span class="fh5co-price">$22
-									<sup>.50</sup>
-								</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias
-									vel suscipit explicabo.</p>
-							</div>
-						</div>
-					</div>
-	</div>
-
-<!-- 	<div id="fh5co-featured-menu" class="fh5co-section">
-			
-						<div class="row">
-							<div class="col-md-12 fh5co-heading animate-box">
-								<div> <img src="images/back5.png" alt="" class="img-responsive" style="max-width:300px; float: right"></div>
-								
-								
-								<div class="row" style="margin: 5%">
-			
-									<div class="col-md-7">
-											<h2 style="background: -webkit-linear-gradient(226.13deg, #FD0E16 3.77%, #FD0ED4 100%);-webkit-background-clip:text;
-											-webkit-text-fill-color: transparent;font-weight:bolder">INNOVADORES</h2>
-				
-											<h4>ELLOS ESTÁN CAMBIANDO EL MUNDO</h4>
-				
-											<p style="color: black">Se adentraron en un mundo desconocido y enfrentaron diversos obstáculos para llevar su idea a la realidad. 
-												Ellos resolvieron grandes retos de las siguiente categorías y ahora son referentes a nivel de emprendimiento e innovación. 
-												¡Ven a conocer sus proyectos!.</p>
+					<div class="row animate-box">
+	
+	
+						<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+	
+							<div class="speaker-box" id="speaker1" data-toggle="modal" data-target="#modal-speaker-1">
+	
+	
+								<div class="inner-box">
+	
+									<img src="images/piruchillo.png" alt="">
+	
+									<div class="row">
+										<p>
+											<span class="text-title">
+												<b>ANDREA</b> SAN GIL </span>
+											<span class="text-content">
+												<br>Centro para la Sostenibilidad
+												<br> Urbana </span>
+										</p>
+	
 									</div>
-			
-										
-			
 								</div>
 							</div>
-			
-							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-								<div class="fh5co-item">
-									<img src="images/gallery_9.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-									<h3>Bake Potato Pizza</h3>
-									<span class="fh5co-price">$20
-										<sup>.50</sup>
-									</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias
-										vel suscipit explicabo.</p>
+	
+						</div>
+						<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+	
+							<div class="speaker-box" id="speaker2" data-toggle="modal" data-target="#modal-speaker-2">
+	
+	
+								<div class="inner-box">
+	
+									<img src="images/piruchillo.png" alt="">
+	
+									<div class="row">
+										<p>
+											<span class="text-title">
+												<b>ANDREA</b> SAN GIL </span>
+											<span class="text-content">
+												<br>Centro para la Sostenibilidad
+												<br> Urbana </span>
+										</p>
+	
+									</div>
 								</div>
 							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-								<div class="fh5co-item margin_top">
-									<img src="images/gallery_8.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-									<h3>Salted Fried Chicken</h3>
-									<span class="fh5co-price">$19
-										<sup>.00</sup>
-									</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias
-										vel suscipit explicabo.</p>
+	
+						</div>
+						<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+	
+							<div class="speaker-box" id="speaker3" data-toggle="modal" data-target="#modal-speaker-3">
+	
+	
+								<div class="inner-box">
+	
+									<img src="images/piruchillo.png" alt="">
+	
+									<div class="row">
+										<p>
+											<span class="text-title">
+												<b>ANDREA</b> SAN GIL </span>
+											<span class="text-content">
+												<br>Centro para la Sostenibilidad
+												<br> Urbana </span>
+										</p>
+	
+									</div>
 								</div>
 							</div>
-							<div class="clearfix visible-sm-block visible-xs-block"></div>
-							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-								<div class="fh5co-item">
-									<img src="images/gallery_7.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-									<h3>Italian Sauce Mushroom</h3>
-									<span class="fh5co-price">$17
-										<sup>.99</sup>
-									</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias
-										vel suscipit explicabo.</p>
+	
+						</div>
+						<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+	
+							<div class="speaker-box" id="speaker4" data-toggle="modal" data-target="#modal-speaker-4">
+	
+	
+								<div class="inner-box">
+	
+									<img src="images/piruchillo.png" alt="">
+	
+									<div class="row">
+										<p>
+											<span class="text-title">
+												<b>ANDREA</b> SAN GIL </span>
+											<span class="text-content">
+												<br>Centro para la Sostenibilidad
+												<br> Urbana </span>
+										</p>
+	
+									</div>
 								</div>
 							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-								<div class="fh5co-item margin_top">
-									<img src="images/gallery_6.jpeg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-									<h3>Fried Potato w/ Garlic</h3>
-									<span class="fh5co-price">$22
-										<sup>.50</sup>
-									</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias
-										vel suscipit explicabo.</p>
+	
+						</div>
+					</div>
+					<div class="row animate-box">
+						<div class="col-md-4 text-center fh5co-heading">
+	
+	
+	
+	
+						</div>
+	
+	
+						<!-- <div class="col-md-4 text-center fh5co-heading">
+											<img src="images/puchaus-03.png" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co"
+											 style="width:100%;cursor:pointer;" data-toggle="modal" data-target="#myModal5">
+											<br>
+										</div>
+										<div class="col-md-4 text-center fh5co-heading">
+											<img src="images/puchaus-01.png" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co"
+											 style="width:100%;cursor:pointer;" data-toggle="modal" data-target="#myModal6">
+											<br>
+										</div> -->
+	
+					</div>
+	
+				</div>
+			</div>
+	
+			<!-- .......................................................................... -->
+	
+			<div id="fh5co-inn" class="animate-box" style="background-color: #FFFFFF">
+	
+				<div class="row">
+					<div class="col-md-12 fh5co-heading animate-box">
+						<div>
+							<img src="images/back5.png" alt="" class="img-responsive" style="max-width:400px; float: right">
+						</div>
+	
+						<div>
+							<div class="row">
+	
+								<div class="col-md-7">
+	
+									<div style="margin: 10% 12%">
+	
+										<h2 style="background: -webkit-linear-gradient(226.13deg, #FD0E16 3.77%, #FD0ED4 100%);-webkit-background-clip:text;
+																						-webkit-text-fill-color: transparent;font-weight:bolder">INNOVADORES</h2>
+	
+										<h4>ELLOS ESTÁN CAMBIANDO EL MUNDO</h4>
+	
+										<h5 style="color: black">Se adentraron en un mundo desconocido y enfrentaron diversos obstáculos para llevar su
+											idea a la realidad. Ellos resolvieron grandes retos de las siguiente categorías y
+											ahora son referentes a nivel de emprendimiento e innovación. ¡Ven a conocer sus proyectos!.</h5>
+									</div>
+	
 								</div>
+	
+	
+	
+							</div>
+	
+	
+							<div class="category imgs">
+	
+								<div class="row ">
+	
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/category/categ1.png" alt="PrismaFest">
+										<p>UN LUGAR PARA INSPIRARSE</p>
+	
+									</div>
+	
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/category/categ2.png" alt="PrismaFest">
+										<p>UN LUGAR PARA INSPIRARSE</p>
+	
+									</div>
+	
+	
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/category/categ3.png" alt="PrismaFest">
+										<p>UN LUGAR PARA INSPIRARSE</p>
+	
+									</div>
+	
+	
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/category/categ4.png" alt="PrismaFest">
+										<p>UN LUGAR PARA INSPIRARSE</p>
+	
+									</div>
+	
+	
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/category/categ5.png" alt="PrismaFest">
+										<p>UN LUGAR PARA INSPIRARSE</p>
+	
+									</div>
+	
+	
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/category/categ6.png" alt="PrismaFest">
+										<p>UN LUGAR PARA INSPIRARSE</p>
+	
+									</div>
+	
+	
+								</div>
+	
+							</div>
+	
+						</div>
+	
+						<div class="invite">
+							<div class="row">
+								<div style="margin: 0% 12% 3%">
+									<h4>TE INVITA</h4>
+								</div>
+							</div>
+	
+	
+							<div class="imgs">
+	
+								<div class="row ">
+	
+									<div class="col-md-2 col-sm-4 col-xs-12 text-center">
+	
+										<img src="images/invite/invite1.png" alt="PrismaFest">
+	
+									</div>
+	
+									<div class="col-md-2 col-sm-4 col-xs-12 text-center">
+	
+										<img src="images/invite/invite2.png" alt="PrismaFest">
+									</div>
+								</div>
+	
+							</div>
+	
+						</div>
+	
+						<div class="org">
+	
+							<div class="row">
+								<div style="margin: 0% 12% 3%">
+									<h4>ORGANIZA</h4>
+								</div>
+							</div>
+	
+	
+							<div class="imgs">
+	
+								<div class="row ">
+	
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org1.png" alt="PrismaFest">
+									</div>
+	
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org2.png" alt="PrismaFest">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org3.png" alt="PrismaFest">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org4.png" alt="PrismaFest">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org5.png" alt="PrismaFest">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org6.png" alt="PrismaFest">
+									</div>
+								</div>
+	
+								<div class="row ">
+	
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org7.png" alt="PrismaFest">
+									</div>
+	
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org8.png" alt="PrismaFest">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org9.png" alt="PrismaFest">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org10.png" alt="PrismaFest">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org11.png" alt="PrismaFest">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+	
+										<img src="images/org/org12.png" alt="PrismaFest">
+									</div>
+								</div>
+	
+	
+							</div>
+	
+						</div>
+	
+					</div>
+	
+	
+	
+	
+				</div>
+			</div>
+	
+			<!-- .......................................................................... -->
+	
+	
+	
+	
+	
+			<!-- .......................................................................... -->
+	
+	
+	
+	
+	
+	
+	
+	
+			<footer id="fh5co-footer" role="contentinfo" class="fh5co-section" style="background:black;padding-bottom:0px;">
+				<div class="container">
+					<div class="row row-pb-md">
+						<div class="col-md-4 col-md-push-1 fh5co-widget text-center" style="margin-top:10px;">
+							<img src="images/footerLogo.png" class="img-responsive" style="max-width:100%;cursor:pointer;">
+						</div>
+						<div class="col-md-5 col-md-push-1">
+							<h3 style="color:white;font-weight:bold;margin-bottom:5px;">APÚNTATE A LO</h3>
+							<h2 style="background: -webkit-linear-gradient(226.13deg, #00E9FF 50%, #D300FF 100%);-webkit-background-clip:text;-webkit-text-fill-color: transparent;font-weight:bolder;margin-bottom:5px;">DESCONOCIDO</h2>
+							<input type="text" id="nameContact" style="width:100%;" placeholder="Nombre">
+							<input type="email" id="emailContact" style="width:100%;margin-top:5px;" placeholder="Correo">
+							<button class="prismaButton" id="sendContact" onclick="sendContact()" style="float:right;margin-top:10px;padding:5px 20px;">ENVIAR</button>
+							<div style="display:flex;margin-top:60px;">
+								<b style="color:white;">Contacto:</b>
+								<p style="line-height:1;margin-left:5px;color:white;">info@prismafest.com</p>
+								<a href="https://www.facebook.com/prismafest.cr" target="_blank" style="margin-left:auto;">
+									<img src="images/fblogo.png" class="img-responsive" style="max-width:25px;max-height:25px;cursor:pointer;">
+								</a>
 							</div>
 						</div>
-			
-				</div> -->
-
-	<!-- Modals -->
-
-	<!-- Modal 1 -->
-	<div id="modal-speaker-1" class="modal fade modal-speakers" role="dialog">
-		<div class="modal-dialog">
-			<!-- Modal content-->
-			<div class="modal-content" style="color:black;">
-				<!-- <div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Educación</h4>
-				</div> -->
-				<div class="modal-body">
-
-					<div class="content">
-
-
-						<div class="row">
-							<div class="col-sm-5 col-xs-12 modals-img">
-								<img src="images/speaker1-modal.png" class="img-responsive" alt="Speakers">
-
-							</div>
-							<div class="col-sm-7 col-xs-12 text-center modals-text">
-
-								<div class="row">
+					</div>
+				</div>
+			</footer>
+	
+			<div class="gototop js-top">
+				<a href="#" class="js-gotop">
+					<i class="icon-arrow-up22"></i>
+				</a>
+			</div>
+	
+			<!-- Modals -->
+	
+			<!-- Modal 1 -->
+			<div id="modal-speaker-1" class="modal fade modal-speakers" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content" style="color:black;">
+						<div class="modal-body">
+	
+							<div class="content">
+	
+	
+								<div class="row" style="margin-left: 0px;margin-right: 0px;">
+	
 									<button type="button" class="close" data-dismiss="modal">
 										<img src="images/btn-close.png" alt="">
 									</button>
+	
+									<div class="col-sm-5 col-xs-12 modals-img">
+										<img src="images/speaker1-modal.png" class="img-responsive" alt="Speakers">
+	
+									</div>
+									<div class="col-sm-7 col-xs-12 text-center modals-text">
+										<div class="row">
+											<h1>THOMAS AGRAIT</h1>
+											<h6>"EL DESPUÉS DE MUCHO ESFUERZO LO LOGRÓ"</h6>
+											<p style="padding: 6% 10%;">Thomas es un empresario, especialista en la optimización de procesos industriales
+												y estudiante de post-doctorado en neurociencia del MIT.</p>
+										</div>
+									</div>
 								</div>
-								<div class="row">
-									<h1>THOMAS AGRAIT</h1>
-									<h6>"EL DESPUÉS DE MUCHO ESFUERZO LO LOGRÓ"</h6>
-									<p style="padding: 6% 10%;">Thomas es un empresario, especialista en la optimización de procesos industriales y estudiante de post-doctorado
-										en neurociencia del MIT.</p>
-								</div>
+	
 							</div>
-						</div>
-
-					</div>
-
-
-				</div>
-				<!-- <div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div> -->
-			</div>
-		</div>
-	</div>
-
-<!-- 	<div id="fh5co-featured-testimony" class="fh5co-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 fh5co-heading animate-box">
-					<h2>Testimony</h2>
-					<div class="row">
-						<div class="col-md-6">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil,
-								nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque,
-								nesciunt similique commodi omnis.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-5 animate-box img-to-responsive animate-box" data-animate-effect="fadeInLeft">
-					<img src="images/person_1.jpg" alt="">
-				</div>
-				<div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
-					<blockquote>
-						<p> &ldquo; Quantum ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores
-							nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam. &rdquo;</p>
-						<p class="author">
-							<cite>&mdash; Jane Smith</cite>
-						</p>
-					</blockquote>
-				</div>
-			</div>
-		</div>
-	</div>
- -->
-	<div id="fh5co-slider" class="fh5co-section animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="fh5co-heading">
-						<h2>Our Best
-							<em>&amp;</em> Unique Menu</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil,
-							nulla magnam porro minima officiis!</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-md-push-1 animate-box">
-					<aside id="fh5co-slider-wrwap">
-						<div class="flexslider">
-							<ul class="slides">
-								<li style="background-image: url(images/gallery_7.jpeg);">
-									<div class="overlay-gradient"></div>
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
-												<div class="slider-text-inner">
-													<div class="desc">
-														<h2>Crab
-															<em>with</em> Curry Sources</h2>
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eveniet quae, numquam magnam doloribus eligendi
-															ratione rem, consequatur quos natus voluptates est totam magni! Nobis a temporibus, ipsum repudiandae dolorum.</p>
-														<p>
-															<a href="#" class="btn btn-primary btn-outline">Learn More</a>
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li style="background-image: url(images/gallery_6.jpeg);">
-									<div class="overlay-gradient"></div>
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
-												<div class="slider-text-inner">
-													<div class="desc">
-														<h2>Tuna
-															<em>&amp;</em> Roast Beef</h2>
-														<p>Ink is a free html5 bootstrap and a multi-purpose template perfect for any type of websites. A combination
-															of a minimal and modern design template. The features are big slider on homepage, smooth animation, product
-															listing and many more</p>
-														<p>
-															<a href="#" class="btn btn-primary btn-outline">Learn More</a>
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li style="background-image: url(images/gallery_5.jpeg);">
-									<div class="overlay-gradient"></div>
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
-												<div class="slider-text-inner">
-													<div class="desc">
-														<h2>Egg
-															<em>with</em> Mushroom</h2>
-														<p>Ink is a free html5 bootstrap and a multi-purpose template perfect for any type of websites. A combination
-															of a minimal and modern design template. The features are big slider on homepage, smooth animation, product
-															listing and many more</p>
-														<p>
-															<a href="#" class="btn btn-primary btn-outline">Learn More</a>
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</aside>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-blog" class="fh5co-section">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Events</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, consequatur. Aliquam quaerat pariatur repellendus veniam
-						nemo, saepe, culpa eius aspernatur cumque suscipit quae nobis illo tempora. Eum veniam necessitatibus, blanditiis facilis
-						quidem dolore! Dolorem, molestiae.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/gallery_1.jpeg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Feb. 15th 2016</span>
-							<h3>
-								<a href="#">Photoshoot On The Street</a>
-							</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li>
-									<i class="icon-heart2"></i>1.2K</li>
-								<li>
-									<i class="icon-eye2"></i>2K</li>
-								<li>
-									<a href="#">Read More
-										<i class="icon-arrow-right22"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/gallery_2.jpeg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Feb. 15th 2016</span>
-							<h3>
-								<a href="#">Surfing at Philippines</a>
-							</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li>
-									<i class="icon-heart2"></i>1.2K</li>
-								<li>
-									<i class="icon-eye2"></i>2K</li>
-								<li>
-									<a href="#">Read More
-										<i class="icon-arrow-right22"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/gallery_3.jpeg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Feb. 15th 2016</span>
-							<h3>
-								<a href="#">Focus On Uderwater</a>
-							</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li>
-									<i class="icon-heart2"></i>1.2K</li>
-								<li>
-									<i class="icon-eye2"></i>2K</li>
-								<li>
-									<a href="#">Read More
-										<i class="icon-arrow-right22"></i>
-									</a>
-								</li>
-							</ul>
+	
+	
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Book a Table</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae enim quae vitae cupiditate, sequi quam ea id dolor
-						reiciendis consectetur repudiandae. Rem quam, repellendus veniam ipsa fuga maxime odio? Eaque!</p>
-					<p>
-						<a href="reservation.html" class="btn btn-primary btn-outline">Book Now</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer id="fh5co-footer" role="contentinfo" class="fh5co-section">
-		<div class="container">
-			<div class="row row-pb-md">
-				<div class="col-md-4 fh5co-widget">
-					<h4>Tasty</h4>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa
-						amet.
-					</p>
-				</div>
-				<div class="col-md-2 col-md-push-1 fh5co-widget">
-					<h4>Links</h4>
-					<ul class="fh5co-footer-links">
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Menu</a>
-						</li>
-						<li>
-							<a href="#">Gallery</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-md-2 col-md-push-1 fh5co-widget">
-					<h4>Categories</h4>
-					<ul class="fh5co-footer-links">
-						<li>
-							<a href="#">Landing Page</a>
-						</li>
-						<li>
-							<a href="#">Real Estate</a>
-						</li>
-						<li>
-							<a href="#">Personal</a>
-						</li>
-						<li>
-							<a href="#">Business</a>
-						</li>
-						<li>
-							<a href="#">e-Commerce</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-md-4 col-md-push-1 fh5co-widget">
-					<h4>Contact Information</h4>
-					<ul class="fh5co-footer-links">
-						<li>198 West 21th Street,
-							<br> Suite 721 New York NY 10016</li>
-						<li>
-							<a href="tel://1234567920">+ 1235 2355 98</a>
-						</li>
-						<li>
-							<a href="mailto:info@yoursite.com">info@yoursite.com</a>
-						</li>
-						<li>
-							<a href="http://https://freehtml5.co">freehtml5.co</a>
-						</li>
-					</ul>
-				</div>
-
-			</div>
-
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-						<small class="block">Designed by
-							<a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images:
-							<a href="http://unsplash.co/" target="_blank">Unsplash</a>
-						</small>
-					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li>
-								<a href="#">
-									<i class="icon-twitter2"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="icon-facebook2"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="icon-linkedin2"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="icon-dribbble2"></i>
-								</a>
-							</li>
-						</ul>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop">
-			<i class="icon-arrow-up22"></i>
-		</a>
-	</div>
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
-
-	<script>
-		// 2. This code loads the IFrame Player API code asynchronously.
-		var tag = document.createElement('script');
-
-		tag.src = "https://www.youtube.com/iframe_api";
-		var firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-		// 3. This function creates an <iframe> (and YouTube player)
-		//    after the API code downloads.
-		var player;
-		function onYouTubeIframeAPIReady() {
-			player = new YT.Player('player', {
-				height: '360',
-				width: '100%',
-				videoId: 'ngrd9wmzk5w',
-				events: {
-					'onReady': onPlayerReady,
-					'onStateChange': onPlayerStateChange
+			<!-- Modals -->
+	
+			<!-- jQuery -->
+			<script src="js/jquery.min.js"></script>
+			<!-- jQuery Easing -->
+			<script src="js/jquery.easing.1.3.js"></script>
+			<!-- Bootstrap -->
+			<script src="js/bootstrap.min.js"></script>
+			<!-- Waypoints -->
+			<script src="js/jquery.waypoints.min.js"></script>
+			<!-- Waypoints -->
+			<script src="js/jquery.stellar.min.js"></script>
+			<!-- Flexslider -->
+			<script src="js/jquery.flexslider-min.js"></script>
+	
+			<!-- Date Time -->
+			<script src="js/moment.min.js"></script>
+			<script src="js/bootstrap-datetimepicker.js"></script>
+	
+	
+			<!-- Main -->
+			<script src="js/main.js"></script>
+	
+	
+			<script>
+				// 2. This code loads the IFrame Player API code asynchronously.
+				var tag = document.createElement('script');
+	
+				tag.src = "https://www.youtube.com/iframe_api";
+				var firstScriptTag = document.getElementsByTagName('script')[0];
+				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	
+				// 3. This function creates an <iframe> (and YouTube player)
+				//    after the API code downloads.
+				var player;
+				function onYouTubeIframeAPIReady() {
+					player = new YT.Player('player', {
+						height: '360',
+						width: '100%',
+						videoId: 'ngrd9wmzk5w',
+						events: {
+							'onReady': onPlayerReady,
+							'onStateChange': onPlayerStateChange
+						}
+					});
 				}
-			});
-		}
-
-		// 4. The API will call this function when the video player is ready.
-		function onPlayerReady(event) {
-			//event.target.playVideo();
-		}
-
-		// 5. The API calls this function when the player's state changes.
-		//    The function indicates that when playing a video (state=1),
-		//    the player should play for six seconds and then stop.
-		var done = false;
-		function onPlayerStateChange(event) {
-
-		}
-		function stopVideo() {
-			player.stopVideo();
-		}
-	</script>
-
-</body>
+	
+				// 4. The API will call this function when the video player is ready.
+				function onPlayerReady(event) {
+					//event.target.playVideo();
+				}
+	
+				// 5. The API calls this function when the player's state changes.
+				//    The function indicates that when playing a video (state=1),
+				//    the player should play for six seconds and then stop.
+				var done = false;
+				function onPlayerStateChange(event) {
+	
+				}
+				function stopVideo() {
+					player.stopVideo();
+				}
+			</script>
+	
+	
+	
+	</body>
 
 </html>
