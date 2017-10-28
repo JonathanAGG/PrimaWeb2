@@ -1,0 +1,13 @@
+checkAvailable?
+--no
+----kickOut
+--yes
+----userExists && isBusy?
+------yes
+--------kickOut
+------no
+--------user.findModify(upsert)
+--------reserve
+--------email
+
+tlpt
