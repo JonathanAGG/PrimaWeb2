@@ -1988,7 +1988,7 @@ b{
   
       .speaker-box .inner-box p {
   
-        margin-top: 55%;
+        margin-top: 75%;
   
       }
   
@@ -2180,7 +2180,103 @@ b{
               background-blend-mode: multiply;
               background-size: 100% 100%;
             }
+
+            /* SPEAKER5 */
+  
+            #speaker5 {
         
+              background: url('../images/speakers/s5.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+        
+            #speaker5:hover {
+        
+              background: url('../images/speakers/s5.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+      
+  
+              /* SPEAKER6 */
+  
+              #speaker6 {
+        
+              background: url('../images/speakers/s6.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+        
+            #speaker6:hover {
+        
+              background: url('../images/speakers/s6.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+        
+            /* SPEAKER7 */
+        
+            #speaker7 {
+        
+              background: url('../images/speakers/s7.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+        
+            #speaker7:hover {
+        
+              background: url('../images/speakers/s7.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+        
+            /* SPEAKER8 */
+        
+            #speaker8 {
+        
+              background: url('../images/speakers/s8.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+        
+            #speaker8:hover {
+        
+              background: url('../images/speakers/s8.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+
+             /* SPEAKER9 */
+        
+             #speaker9 {
+              
+                    background: url('../images/speakers/s9.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                  }
+              
+                  #speaker9:hover {
+              
+                    background: url('../images/speakers/s9.png'), url('../images/speakers/grad.png');
+                    background-blend-mode: multiply;
+                    background-size: 100% 100%;
+                  }
+              
+                  /* SPEAKER10 */
+              
+                  #speaker10 {
+              
+                    background: url('../images/speakers/s10.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                  }
+              
+                  #speaker10:hover {
+              
+                    background: url('../images/speakers/s10.png'), url('../images/speakers/grad.png');
+                    background-blend-mode: multiply;
+                    background-size: 100% 100%;
+                  }
 
 
 
