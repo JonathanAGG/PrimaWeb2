@@ -2033,7 +2033,7 @@ b{
   
       #fh5co-about {
   
-        padding: 7% 0% 5% 0% !important;
+        padding: 9% 0% 7% 0% !important;
       }
   
       #fh5co-why p {
@@ -2085,7 +2085,7 @@ b{
   
       #fh5co-inn .org img {
   
-        margin-bottom: 40%;
+        margin-bottom: 65%;
         max-width: 207px;
         max-height: 50px
       }
@@ -2135,7 +2135,7 @@ b{
   
       /* SPEAKER2 */
   
-      #speaker2 {
+          #speaker2 {
         
               background: url('../images/speakers/s2.png');
               background-repeat: no-repeat;
@@ -2144,7 +2144,7 @@ b{
         
             #speaker2:hover {
         
-              background: url('../images/speakers/s2.png'), url('../images/speakers/grad.png');
+              background: url('../images/speakers/s2.png'), url('../images/speakers/grad2.png');
               background-blend-mode: multiply;
               background-size: 100% 100%;
             }
@@ -2176,7 +2176,7 @@ b{
         
             #speaker4:hover {
         
-              background: url('../images/speakers/s4.png'), url('../images/speakers/grad.png');
+              background: url('../images/speakers/s4.png'), url('../images/speakers/grad2.png');
               background-blend-mode: multiply;
               background-size: 100% 100%;
             }
@@ -2192,7 +2192,7 @@ b{
         
             #speaker5:hover {
         
-              background: url('../images/speakers/s5.png'), url('../images/speakers/grad.png');
+              background: url('../images/speakers/s5.png'), url('../images/speakers/grad2.png');
               background-blend-mode: multiply;
               background-size: 100% 100%;
             }
@@ -2225,7 +2225,7 @@ b{
         
             #speaker7:hover {
         
-              background: url('../images/speakers/s7.png'), url('../images/speakers/grad.png');
+              background: url('../images/speakers/s7.png'), url('../images/speakers/grad2.png');
               background-blend-mode: multiply;
               background-size: 100% 100%;
             }
@@ -2273,13 +2273,205 @@ b{
               
                   #speaker10:hover {
               
-                    background: url('../images/speakers/s10.png'), url('../images/speakers/grad.png');
+                    background: url('../images/speakers/s10.png'), url('../images/speakers/grad2.png');
                     background-blend-mode: multiply;
                     background-size: 100% 100%;
                   }
 
 
+  /* SPEAKER11 */
+  
+  #speaker11 {
+    
+          background: url('../images/speakers/s11.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    
+        #speaker11:hover {
+    
+          background: url('../images/speakers/s11.png'), url('../images/speakers/grad.png');
+          background-blend-mode: multiply;
+          background-size: 100% 100%;
+        }
+  
 
+  /* SPEAKER12 */
+
+      #speaker12 {
+    
+          background: url('../images/speakers/s12.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    
+        #speaker12:hover {
+    
+          background: url('../images/speakers/s12.png'), url('../images/speakers/grad2.png');
+          background-blend-mode: multiply;
+          background-size: 100% 100%;
+        }
+    
+        /* SPEAKER13 */
+    
+        #speaker13 {
+    
+          background: url('../images/speakers/s13.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    
+        #speaker13:hover {
+    
+          background: url('../images/speakers/s13.png'), url('../images/speakers/grad2.png');
+          background-blend-mode: multiply;
+          background-size: 100% 100%;
+        }
+    
+        /* SPEAKER14 */
+    
+        #speaker14 {
+    
+          background: url('../images/speakers/s14.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    
+        #speaker14:hover {
+    
+          background: url('../images/speakers/s14.png'), url('../images/speakers/grad.png');
+          background-blend-mode: multiply;
+          background-size: 100% 100%;
+        }
+
+        /* SPEAKER15 */
+
+        #speaker15 {
+    
+          background: url('../images/speakers/s15.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    
+        #speaker15:hover {
+    
+          background: url('../images/speakers/s15.png'), url('../images/speakers/grad2.png');
+          background-blend-mode: multiply;
+          background-size: 100% 100%;
+        }
+  
+
+          /* SPEAKER16 */
+
+          #speaker16 {
+    
+          background: url('../images/speakers/s16.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    
+        #speaker16:hover {
+    
+          background: url('../images/speakers/s16.png'), url('../images/speakers/grad.png');
+          background-blend-mode: multiply;
+          background-size: 100% 100%;
+        }
+    
+        /* SPEAKER17 */
+    
+        #speaker17 {
+    
+          background: url('../images/speakers/s17.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    
+        #speaker17:hover {
+    
+          background: url('../images/speakers/s17.png'), url('../images/speakers/grad.png');
+          background-blend-mode: multiply;
+          background-size: 100% 100%;
+        }
+    
+        /* SPEAKER18 */
+    
+        #speaker18 {
+    
+          background: url('../images/speakers/s18.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+    
+        #speaker18:hover {
+    
+          background: url('../images/speakers/s18.png'), url('../images/speakers/grad2.png');
+          background-blend-mode: multiply;
+          background-size: 100% 100%;
+        }
+
+         /* SPEAKER19 */
+    
+         #speaker19 {
+          
+                background: url('../images/speakers/s19.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+              }
+          
+              #speaker19:hover {
+          
+                background: url('../images/speakers/s19.png'), url('../images/speakers/grad.png');
+                background-blend-mode: multiply;
+                background-size: 100% 100%;
+              }
+          
+              /* SPEAKER20 */
+          
+              #speaker20 {
+          
+                background: url('../images/speakers/s20.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+              }
+          
+              #speaker20:hover {
+          
+                background: url('../images/speakers/s20.png'), url('../images/speakers/grad2.png');
+                background-blend-mode: multiply;
+                background-size: 100% 100%;
+              }
+            
+              /* SPEAKER21 */
+    
+         #speaker21 {
+          
+                background: url('../images/speakers/s21.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+              }
+          
+              #speaker21:hover {
+          
+                background: url('../images/speakers/s21.png'), url('../images/speakers/grad2.png');
+                background-blend-mode: multiply;
+                background-size: 100% 100%;
+              }
+          
+              /* SPEAKER22 */
+          
+              #speaker22 {
+          
+                background: url('../images/speakers/s22.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+              }
+          
+              #speaker22:hover {
+          
+                background: url('../images/speakers/s22.png'), url('../images/speakers/grad.png');
+                background-blend-mode: multiply;
+                background-size: 100% 100%;
+              }
 
 
 
