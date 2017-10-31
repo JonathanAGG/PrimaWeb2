@@ -1482,6 +1482,31 @@
 			</div>
 		</div>
 
+
+		<!-- MODAL EMAIL-->
+		<div id="modal-email" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div>
+								<div class="row content-speaker">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="images/btn-close.png" alt="">
+									</button>
+								</div>
+								<div class="row text-center">
+									<img src="images/logo-email.png" class="img-responsive" style=" max-width: 100%;margin:auto;margin-bottom: 6%;">
+									<p id="msj-email" style="font-size: 18px;"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- Modals -->
 
 		<!-- jQuery -->
@@ -1545,11 +1570,22 @@
 				player.stopVideo();
 			}
 
+			function validateEmail(email) {
+				var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				return regex.test(email);
+			}
+
 			function sendContact() {
 				var nameContact = $('#nameContact').val();
 				var emailContact = $('#emailContact').val();
 
-				$('#sendContact').addClass('hidden');
+				if(!validateEmail(emailContact) ){
+					$('#emailContact').val('');
+					$('#msj-email').html('El email es invalido')
+					$('#modal-email').modal('show');
+				}else{
+
+					$('#sendContact').addClass('hidden');
 
 				var setHeader = function (req) {
 					req.setRequestHeader('content-type', 'application/json');
@@ -1567,13 +1603,18 @@
 						$('#sendContact').removeClass('hidden');
 						$('#nameContact').val('');
 						$('#emailContact').val('');
-						alert('Información enviada correctamente. Pronto lo estaremos contactando.');
+
+						$('#msj-email').html('Información enviada correctamente. Pronto lo estaremos contactando.')
+						$('#modal-email').modal('show');
 					},
 					error: function () {
+
+						$('#msj-email').html('No se pudo enviar la información. Porfavor enviar nuevamente.')
+						$('#modal-email').modal('show');
 						$('#sendContact').removeClass('hidden');
-						alert('No se pudo enviar la información. Porfavor enviar nuevamente.')
 					}
 				});
+				}
 			}
 		</script>
 
