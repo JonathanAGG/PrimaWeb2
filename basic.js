@@ -113,16 +113,23 @@ exports.contactInfo = (req, res) => {
               subject: 'Prisma Fest', // subject
               html: htmlText
             };
-            gmailTransporter(function (transporter) {
-                transporter.sendMail(mailOptions, function(error5, info){
-                  if(error5) {throw error5; res.send(400, {error:'Hemos tenido un error, favor enviar la información nuevamente'})}
-                  else{ 
-                    console.log('Enviando Email');
-                    console.log(info);
-                    res.send(200,{info:'Message Sent'} ); 
-                  }
+            try{
+
+                gmailTransporter(function (transporter) {
+                    transporter.sendMail(mailOptions, function(error5, info){
+                      if(error5) {throw error5; res.send(400, {error:'Hemos tenido un error, favor enviar la información nuevamente'})}
+                      else{ 
+                        console.log('Enviando Email');
+                        console.log(info);
+                        res.send(200,{info:'Message Sent'} ); 
+                      }
+                    })
                 })
-            })
+            }
+            catch(error6){
+                throw error6; 
+                res.send(400, {error:'Hemos tenido un error, favor enviar la información nuevamente'});
+            }
         }
     })
 }
