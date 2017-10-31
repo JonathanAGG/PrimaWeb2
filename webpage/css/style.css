@@ -1997,7 +1997,7 @@ b{
   
   
         .modal-speakers .modal-dialog {
-          width: 755px;
+         /*  width: 755px; */
           margin: 8% auto;
         }
       }
@@ -2083,7 +2083,7 @@ b{
         max-height: 50px
       }
   
-      #fh5co-inn .org img {
+      #fh5co-inn .contentLogo img{
   
         margin-bottom: 65%;
         max-width: 207px;
@@ -2099,10 +2099,34 @@ b{
 
 
       #fh5co-header{
-        background-image: url("../images/header.png");
+        background-image: url("../images/header-xs.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }
+
+      #fh5co-header .display-tc {
+				padding-top: 350px; 
+				padding-bottom:90px; 
+				color:#FFFFFF
+
+			}
+
+      @media (min-width: 768px) {
+        
+        #fh5co-header{
+          background-image: url("../images/header.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+
+        #fh5co-header .display-tc {
+          padding-top: 310px; 
+          padding-bottom:215px; 
+          color:#FFFFFF
+  
+        }
+
+            }
 
       .content-speaker{
 				margin-left: 0px;
@@ -2110,9 +2134,17 @@ b{
 			}
 			.desc-speakers{
 
-				padding: 6% 10%
+				padding: 0% 5%
 
       }
+
+
+      .titlesLogos{
+
+        margin: 0% 12% 10%
+      }
+      
+
       
 /*    ---------------       SPEAKERS    ---------------------  */
 
