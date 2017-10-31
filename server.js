@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.use('/adm1n', express.static(__dirname + '/admin')); //Página para vizualizar los datos ingresados
+app.use('/images', express.static(__dirname + '/images')); //Página para vizualizar los datos ingresados
 app.use(express.static(__dirname+'/webpage'));
 
 app.all('*', (req, res, next) => {
@@ -57,7 +58,7 @@ app.get('*', (req, res) => {
 
 
 //Habilitar puerto de escucha para el servidor
-
-let server = app.listen(3000, function(){
+let port = Number(process.env.PORT || 3000);
+let server = app.listen(port, function(){
   console.log('Server Started Listening 3000');
 })
