@@ -6,6 +6,7 @@ const mongo = require('mongodb');
 //Puerto de conexión con la base de datos (no es el mismo de escucha del servidor)
 const uristring = 
   process.env.MONGOLAB_URI || 
+  process.env.MONGODB_URI || 
   process.env.MONGOHQ_URL || 
   'mongodb://localhost/Prisma';
 
