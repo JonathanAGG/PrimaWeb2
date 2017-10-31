@@ -171,6 +171,47 @@ exports.reservationConference = (req, res) => {
     })
 }
 
+exports.qrRegister = (req, res) => {
+    let userId = parseInt(req.body.id);
+    db.collection('users').findOne({id:userId},(error, doc) => {
+        if(doc===null){console.log('Usuario no encontrado');res.send(400, 'Usuario no encontrado');}
+        else{
+            db.collection('reservations').findOne({_id:req.body.block},(error2, doc2) => {
+                if(doc2.signed.indexOf(doc.email)>=0){
+                    let newSigned = [];
+                    Array.prototype.push.apply(newSigned, doc2.signed.splice(0, doc2.signed.indexOf(doc.email)));
+                    Array.prototype.push.apply(newSigned, doc2.signed.splice(1, doc2.signed.length));
+                    db.collection('reservations').findAndModify({_id:req.body.block},{},{$push:{entered:doc.email}, $set:{signed:newSigned}}, (error3, doc3) => {
+                        if(error3) {throw error3; res.send(400, 'Hemos tenido un error, favor solicitar el ingreso nuevamente')}
+                        else{
+                            res.send(200, true);   
+                        }
+                    })
+                }
+                else if(doc2.entered.indexOf(doc.email)>=0){
+                    console.log('Éste participante ya había ingresado al bloque');
+                    res.send(400, 'Éste participante ya había ingresado al bloque')
+                }
+                else{
+                    let countMax = doc2.max - doc2.entered.length - doc2.signed.length;
+                    if(countMax > 0){
+                        db.collection('reservations').findAndModify({_id:req.body.block},{},{$push:{entered:doc.email}}, (error4, doc4) => {
+                            if(error4) {throw error4; res.send(400, 'Hemos tenido un error, favor solicitar la reserva nuevamente')}
+                            else{
+                                res.send(200, true);
+                            }
+                        })
+                    }
+                    else{
+                        res.send(400, 'Desafortunadamente ya no quedan campos en éste bloque');
+                    }
+                }
+            })
+        }
+    })
+}
+
+
 exports.getNow = (req,res) => {
     let espsArray = [];
     for (let i = 1; i <= 15; i++) {

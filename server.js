@@ -42,6 +42,8 @@ app.post('/queries', basicServices.getQueries); //POST
 app.post('/adm1n/pages/login', adminServices.loginUser);  
 app.get('/adm1n/pages/admins', adminServices.getAdmins); 
 
+app.post('/qr', basicServices.qrRegister); 
+
 
 app.get('/test', (req, res) => {
   console.log(req.query.id);
