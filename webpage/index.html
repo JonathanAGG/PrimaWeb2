@@ -58,6 +58,13 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<style>
+	
+	#page {
+              background-color: black;
+			}
+			
+	</style>
 
 </head>
 
@@ -66,7 +73,7 @@
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
-		<nav class="fh5co-nav" role="navigation">
+		<nav class="fh5co-nav fh5co-nav2" role="navigation">
 			<div class="top-menu">
 				<!-- <div class="container"> -->
 				<div>
@@ -79,19 +86,17 @@
 						</div>
 						<div class="col-xs-6 col-xs-offset-2  menu-1 menu-wrap" style="margin-top: 1%">
 							<ul>
-
+								<!-- <li><a href="index.html">SOMOS</a></li> -->
 								<li>
-									<a href="#fh5co-started">EXPOSITORES</a>
+									<a href="index.html">HOME</a>
 								</li>
-								<li>
-									<a href="#fh5co-inn">INNOVADORES</a>
-								</li>
-								<li>
+								<li class="active">
 									<a href="conferences.html">CONFERENCIAS</a>
 								</li>
 								<li>
 									<a href="workshops.html">TALLERES</a>
 								</li>
+								<!-- <li><a href="contact.html">INNOVADORES</a></li> -->
 							</ul>
 						</div>
 					</div>
@@ -100,7 +105,7 @@
 			</div>
 		</nav>
 
-		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" data-stellar-background-ratio="0.5">
+		<!-- <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" data-stellar-background-ratio="0.5">
 
 			<div class="overlay"></div>
 			<div class="container">
@@ -117,10 +122,36 @@
 					</div>
 				</div>
 			</div>
+		</header> -->
+
+
+		<header id="fh5co-header" class="fh5co-cover" role="banner"
+		  style="background-position: 0px 100px;">
+
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeIn">
+								<p>TOMA RIESGOS Y ATRÉVETE A </p>
+								<img src="images/innovar.png" alt="" class="img-responsive" style="display: inline;padding: 0% 10%;">
+								<p>19 NOVIEMBRE, 2017</p>
+								<p>MUSEO DE LOS NIÑOS</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 
 
-		<div id="fh5co-about" class="fh5co-section" style="background-image: url(images/back2.png);background-size: 100% 100%;">
+		<div id="fh5co-about" class="fh5co-section" style="position: relative">
+
+
+			<img src="images/back2.png" alt="" class="img-responsive" style="max-width:350px; float: right; position: absolute;
+					bottom: 0; right: 0 ">
+
 			<div class="" style="margin: 0% 6% 0% 6%">
 				<div class="row">
 					<div class="col-md-5 img-wrap animate-box" data-animate-effect="fadeInLeft">
@@ -140,7 +171,7 @@
 			</div>
 		</div>
 
-		<div id="fh5co-why" class="fh5co-section" style="background:#FFFFFF; padding: 8% 15% 8% 15%">
+		<div id="fh5co-why" class="fh5co-section" style="background:#FFFFFF; padding: 12%">
 
 			<div class="row">
 				<div class="text-center title">
@@ -180,120 +211,357 @@
 				</div>
 				<div class="row animate-box">
 
-
+					<!-- Speaker 1 -->
 					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
-
 						<div class="speaker-box" id="speaker1" data-toggle="modal" data-target="#modal-speaker-1">
-
-
 							<div class="inner-box">
-
-								<img src="images/piruchillo.png" alt="">
-
+								<img src="images/headerSpks.png" alt="">
 								<div class="row">
 									<p>
 										<span class="text-title">
-											<b>ANDREA</b> SAN GIL </span>
-										<span class="text-content">
-											<br>Centro para la Sostenibilidad
-											<br> Urbana </span>
+											<b>TOMAS</b> DE CAMINO </span>
 									</p>
-
 								</div>
 							</div>
 						</div>
-
 					</div>
+					<!-- Speaker 2 -->
 					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
-
 						<div class="speaker-box" id="speaker2" data-toggle="modal" data-target="#modal-speaker-2">
-
-
 							<div class="inner-box">
-
-								<img src="images/piruchillo.png" alt="">
-
+								<img src="images/headerSpks.png" alt="">
 								<div class="row">
 									<p>
 										<span class="text-title">
-											<b>ANDREA</b> SAN GIL </span>
-										<span class="text-content">
-											<br>Centro para la Sostenibilidad
-											<br> Urbana </span>
+											<b>THOMAS</b> AGRAIT </span>
 									</p>
-
 								</div>
 							</div>
 						</div>
 
 					</div>
+					<!-- Speaker 3 -->
 					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
-
 						<div class="speaker-box" id="speaker3" data-toggle="modal" data-target="#modal-speaker-3">
-
-
 							<div class="inner-box">
-
-								<img src="images/piruchillo.png" alt="">
-
+								<img src="images/headerSpks.png" alt="">
 								<div class="row">
 									<p>
 										<span class="text-title">
-											<b>ANDREA</b> SAN GIL </span>
-										<span class="text-content">
-											<br>Centro para la Sostenibilidad
-											<br> Urbana </span>
+											<b>SEBASTIAN</b>FALLA </span>
 									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Speaker 4 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker4" data-toggle="modal" data-target="#modal-speaker-4">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>PAULA</b> GUEVARA</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
+				</div>
+
+				<!-- row2 -->
+				<div class="row animate-box">
+
+					<!-- Speaker 5 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker5" data-toggle="modal" data-target="#modal-speaker-5">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>MONICA CASTRO</b>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Speaker 6 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker6" data-toggle="modal" data-target="#modal-speaker-6">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>MARIANNE</b> HUTT</span>
+									</p>
 								</div>
 							</div>
 						</div>
 
 					</div>
+					<!-- Speaker 7 -->
 					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
-
-						<div class="speaker-box" id="speaker4" data-toggle="modal" data-target="#modal-speaker-4">
-
-
+						<div class="speaker-box" id="speaker7" data-toggle="modal" data-target="#modal-speaker-7">
 							<div class="inner-box">
-
-								<img src="images/piruchillo.png" alt="">
-
+								<img src="images/headerSpks.png" alt="">
 								<div class="row">
 									<p>
 										<span class="text-title">
-											<b>ANDREA</b> SAN GIL </span>
-										<span class="text-content">
-											<br>Centro para la Sostenibilidad
-											<br> Urbana </span>
+											<b>JOSE MIGUEL</b> ALFARO </span>
 									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Speaker 8 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker8" data-toggle="modal" data-target="#modal-speaker-8">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>JORGE</b> RIVERA</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
+				</div>
+
+				<!-- row3 -->
+				<div class="row animate-box">
+
+					<!-- Speaker 9 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker9" data-toggle="modal" data-target="#modal-speaker-9">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>MARIO</b> MARALES</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Speaker 10 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker10" data-toggle="modal" data-target="#modal-speaker-10">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>IRENE ISSA</b> EL KHOURY </span>
+									</p>
 								</div>
 							</div>
 						</div>
 
+					</div>
+					<!-- Speaker 11 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker11" data-toggle="modal" data-target="#modal-speaker-11">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>GRETCHEN</b> HUTT</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Speaker 12 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker12" data-toggle="modal" data-target="#modal-speaker-12">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>FEDERICO</b> CARRANZA</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<!-- row4 -->
+				<div class="row animate-box">
+
+					<!-- Speaker 13 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker13" data-toggle="modal" data-target="#modal-speaker-13">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>JOSE</b> ELIAS</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Speaker 14 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker14" data-toggle="modal" data-target="#modal-speaker-14">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>DIEGO</b> OCONITRILLO</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- Speaker 15 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker15" data-toggle="modal" data-target="#modal-speaker-15">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>CRISTINA</b> VINDAS</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Speaker 16 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker16" data-toggle="modal" data-target="#modal-speaker-16">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>CHRISTIAN</b> MARÍN</span>
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+
+				<!-- row5 -->
 				<div class="row animate-box">
-					<div class="col-md-4 text-center fh5co-heading">
 
+					<!-- Speaker 17 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker17" data-toggle="modal" data-target="#modal-speaker-17">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>ANTONIO</b> VITOLA</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
+					<!-- Speaker 18 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker18" data-toggle="modal" data-target="#modal-speaker-18">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>ANDREA</b> SAN GIL </span>
+									</p>
+								</div>
+							</div>
+						</div>
 
-
+					</div>
+					<!-- Speaker 19 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker19" data-toggle="modal" data-target="#modal-speaker-19">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>ALVARO</b> CEDEÑO</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Speaker 20 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker20" data-toggle="modal" data-target="#modal-speaker-20">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>ALEJANDRO</b> VEGA</span>
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 
 
-					<!-- <div class="col-md-4 text-center fh5co-heading">
-											<img src="images/puchaus-03.png" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co"
-											 style="width:100%;cursor:pointer;" data-toggle="modal" data-target="#myModal5">
-											<br>
-										</div>
-										<div class="col-md-4 text-center fh5co-heading">
-											<img src="images/puchaus-01.png" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co"
-											 style="width:100%;cursor:pointer;" data-toggle="modal" data-target="#myModal6">
-											<br>
-										</div> -->
+				</div>
 
+				<!-- row6 -->
+				<div class="row animate-box">
+
+					<!-- Speaker 21 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker21" data-toggle="modal" data-target="#modal-speaker-21">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>ADRIAN</b> LACHNER</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Speaker 22 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker22" data-toggle="modal" data-target="#modal-speaker-22">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>MARIO</b> MORALES</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
 				</div>
 
 			</div>
@@ -340,14 +608,14 @@
 								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
 
 									<img src="images/category/categ1.png" alt="PrismaFest">
-									<p>UN LUGAR PARA INSPIRARSE</p>
+									<p>EDUCACIÓN</p>
 
 								</div>
 
 								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
 
 									<img src="images/category/categ2.png" alt="PrismaFest">
-									<p>UN LUGAR PARA INSPIRARSE</p>
+									<p>CIENCIAS DE LA VIDA</p>
 
 								</div>
 
@@ -355,7 +623,7 @@
 								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
 
 									<img src="images/category/categ3.png" alt="PrismaFest">
-									<p>UN LUGAR PARA INSPIRARSE</p>
+									<p>ENERGÍA Y AMBIENTE</p>
 
 								</div>
 
@@ -363,7 +631,7 @@
 								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
 
 									<img src="images/category/categ4.png" alt="PrismaFest">
-									<p>UN LUGAR PARA INSPIRARSE</p>
+									<p>AGROINDUSTRIA</p>
 
 								</div>
 
@@ -371,7 +639,7 @@
 								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
 
 									<img src="images/category/categ5.png" alt="PrismaFest">
-									<p>UN LUGAR PARA INSPIRARSE</p>
+									<p>ECONOMÍA CREATIVA</p>
 
 								</div>
 
@@ -379,7 +647,7 @@
 								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
 
 									<img src="images/category/categ6.png" alt="PrismaFest">
-									<p>UN LUGAR PARA INSPIRARSE</p>
+									<p>SOCIEDAD INTELIGENTE</p>
 
 								</div>
 
@@ -390,9 +658,9 @@
 
 					</div>
 
-					<div class="invite">
+					<div class="contentLogo">
 						<div class="row">
-							<div style="margin: 0% 12% 3%">
+							<div class="titlesLogos">
 								<h4>TE INVITA</h4>
 							</div>
 						</div>
@@ -402,13 +670,13 @@
 
 							<div class="row ">
 
-								<div class="col-md-2 col-sm-4 col-xs-12 text-center">
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
 
 									<img src="images/invite/invite1.png" alt="PrismaFest">
 
 								</div>
 
-								<div class="col-md-2 col-sm-4 col-xs-12 text-center">
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
 
 									<img src="images/invite/invite2.png" alt="PrismaFest">
 								</div>
@@ -418,10 +686,10 @@
 
 					</div>
 
-					<div class="org">
+					<div class="contentLogo">
 
 						<div class="row">
-							<div style="margin: 0% 12% 3%">
+							<div class="titlesLogos">
 								<h4>ORGANIZA</h4>
 							</div>
 						</div>
@@ -492,6 +760,65 @@
 
 					</div>
 
+
+					<div class="contentLogo">
+
+						<div class="row">
+							<div class="titlesLogos">
+								<h4>COLABORA</h4>
+							</div>
+						</div>
+
+
+						<div class="imgs">
+
+							<div class="row ">
+
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col1.png" alt="PrismaFest">
+								</div>
+
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col2.png" alt="PrismaFest">
+								</div>
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col3.png" alt="PrismaFest">
+								</div>
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col4.png" alt="PrismaFest">
+								</div>
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col5.png" alt="PrismaFest">
+								</div>
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col6.png" alt="PrismaFest">
+								</div>
+							</div>
+
+							<div class="row ">
+
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col7.png" alt="PrismaFest">
+								</div>
+
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col8.png" alt="PrismaFest">
+								</div>
+							</div>
+
+
+						</div>
+
+					</div>
+
 				</div>
 
 
@@ -499,21 +826,6 @@
 
 			</div>
 		</div>
-
-		<!-- .......................................................................... -->
-
-
-
-
-
-		<!-- .......................................................................... -->
-
-
-
-
-
-
-
 
 		<footer id="fh5co-footer" role="contentinfo" class="fh5co-section" style="background:black;padding-bottom:0px;">
 			<div class="container">
@@ -549,7 +861,7 @@
 
 		<!-- Speaker 1 -->
 		<div id="modal-speaker-1" class="modal fade modal-speakers" role="dialog">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<!-- Modal content-->
 				<div class="modal-content" style="color:black;">
 					<div class="modal-body">
@@ -558,10 +870,10 @@
 								<button type="button" class="close" data-dismiss="modal">
 									<img src="images/btn-close.png" alt="">
 								</button>
-								<div class="col-sm-5 col-xs-12 modals-img">
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
 									<img src="images/speakers/s1.png" class="img-responsive" alt="Speakers">
 								</div>
-								<div class="col-sm-7 col-xs-12 text-center modals-text">
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
 									<div class="row">
 										<h1>TOMAS DE CAMINO</h1>
 										<p class="desc-speakers">Tomas es científico, productor musical, profesor, artista y un referente nacional en temas de innovación. </p>
@@ -576,8 +888,7 @@
 
 		<!-- Speaker 2 -->
 		<div id="modal-speaker-2" class="modal fade modal-speakers" role="dialog">
-			<div class="modal-dialog">
-				<!-- Modal content-->
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content" style="color:black;">
 					<div class="modal-body">
 						<div class="content">
@@ -585,10 +896,10 @@
 								<button type="button" class="close" data-dismiss="modal">
 									<img src="images/btn-close.png" alt="">
 								</button>
-								<div class="col-sm-5 col-xs-12 modals-img">
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
 									<img src="images/speakers/s2.png" class="img-responsive" alt="Speakers">
 								</div>
-								<div class="col-sm-7 col-xs-12 text-center modals-text">
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
 									<div class="row">
 										<h1>THOMAS AGRAIT</h1>
 										<p class="desc-speakers">Thomas es un empresario, especialista en la optimización de procesos industriales y estudiante de post-doctorado
@@ -604,7 +915,7 @@
 
 		<!-- Speaker 3 -->
 		<div id="modal-speaker-3" class="modal fade modal-speakers" role="dialog">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<!-- Modal content-->
 				<div class="modal-content" style="color:black;">
 					<div class="modal-body">
@@ -613,14 +924,16 @@
 								<button type="button" class="close" data-dismiss="modal">
 									<img src="images/btn-close.png" alt="">
 								</button>
-								<div class="col-sm-5 col-xs-12 modals-img">
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
 									<img src="images/speakers/s3.png" class="img-responsive" alt="Speakers">
 								</div>
-								<div class="col-sm-7 col-xs-12 text-center modals-text">
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
 									<div class="row">
-										<h1>THOMAS AGRAIT</h1>
-										<p class="desc-speakers">Thomas es un empresario, especialista en la optimización de procesos industriales y estudiante de post-doctorado
-											en neurociencia del MIT. </p>
+										<h1>SEBASTIAN FALLA</h1>
+										<p class="desc-speakers">Posee amplia experiencia en el desarrollo de estrategias, estructuras y procesos que logren resonancia genuina
+											con el consumidor, Sebas ayuda a las empresas en áreas de innovación, cultura y liderazgo, con un énfasis en negocios
+											conscientes que despierten el propósito detrás de cada estrategia.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -632,7 +945,7 @@
 
 		<!-- Speaker 4 -->
 		<div id="modal-speaker-4" class="modal fade modal-speakers" role="dialog">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<!-- Modal content-->
 				<div class="modal-content" style="color:black;">
 					<div class="modal-body">
@@ -641,10 +954,10 @@
 								<button type="button" class="close" data-dismiss="modal">
 									<img src="images/btn-close.png" alt="">
 								</button>
-								<div class="col-sm-5 col-xs-12 modals-img">
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
 									<img src="images/speakers/s4.png" class="img-responsive" alt="Speakers">
 								</div>
-								<div class="col-sm-7 col-xs-12 text-center modals-text">
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
 									<div class="row">
 										<h1>PAULA GUEVARA</h1>
 										<p class="desc-speakers">Es una de las creativas más premiadas del país incluyendo un Leon de Bronce en el Festival de Cannes (máximo certamen
@@ -659,8 +972,532 @@
 			</div>
 		</div>
 
+		<!-- Speaker 5 -->
+		<div id="modal-speaker-5" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s5.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>MONICA CASTRO</h1>
+										<p class="desc-speakers">Es una emprendedora apasionada por la generación de cambio a través de la innovación social, ha logrado dirigir
+											equipos interdisciplinarios para proyectos nacionales e internacionales en temas de innovación, emprendimiento
+											y liderazgo, consultora en marketing, forma parte de la organización de TEDx Costa Rica e integrante de múltiples
+											grupos e iniciativas de liderazgo joven. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<!-- Speaker 6 -->
+		<div id="modal-speaker-6" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s6.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>MARIANNE HUTT</h1>
+										<p class="desc-speakers">Es vocera en el empoderamiento de mujeres en ciencia y tecnología, es científica con trayectoria en enfermedades
+											fatales como muerte súbita infantil, cancer pediatrico de cerebro y cancer de páncreas, actualmente es la Directora
+											de Operaciones de Speratum, además realiza proyectos de filantropía con alto impacto en la salud. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<!-- Speaker 7 -->
+		<div id="modal-speaker-7" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s7.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>JOSE MIGUEL ALFARO</h1>
+										<p class="desc-speakers">Es asesor legal y fundador de s.e.e.d., una firma enfocada en cubrir las necesidades legales de start-ups, PYMES
+											, empresas sociales, ONGs e inversionistas de impacto que van desde individuos hasta capital de riesgo e inversionistas
+											institucionales.  Josemi es licenciado en Derecho y tiene un MBA de la Universidad de Oxford, donde fue galardonado
+											con la Beca Skoll. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 8 -->
+		<div id="modal-speaker-8" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s8.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>JORGE RIVERA</h1>
+										<p class="desc-speakers">Director de la incubadora de negocios de Utrechtinc, misma que se ubica en la posición #11 dentro de las mejores
+											incubadoras del mundo. Jorg es miembro del Consejo Asesor de KOP Interim & Business Consultancy y tiene amplia
+											experiencia en negocios online y offline B2C y B2B (Startups, Retail, Lifestyle, FMCG, Tech, Automotive, Interior,
+											Lighting) de diferentes propiedades (capital privado / de riesgo, valores de bolsa, familiar, etc). </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 9 -->
+		<div id="modal-speaker-9" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s9.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>MARIO MARALES</h1>
+										<p class="desc-speakers">Director de la incubadora de negocios de Utrechtinc, misma que se ubica en la posición #11 dentro de las mejores
+											incubadoras del mundo. Jorg es miembro del Consejo Asesor de KOP Interim & Business Consultancy y tiene amplia
+											experiencia en negocios online y offline B2C y B2B (Startups, Retail, Lifestyle, FMCG, Tech, Automotive, Interior,
+											Lighting) de diferentes propiedades (capital privado / de riesgo, valores de bolsa, familiar, etc). </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 10 -->
+		<div id="modal-speaker-10" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s10.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>IRENE ISSA EL KHOURY</h1>
+										<p class="desc-speakers">Es especialista en Design Thinking de The School of Design Thinking del Hasso Platner Institut en Berlin. Es consultora
+											y coach para INCAE, TEC, Earth, MEIC, Bosh, HPI,... además de una amplia experiencia en comunicación visual, e-learning,
+											usabilidad y arquitectura de información.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 11 -->
+		<div id="modal-speaker-11" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s11.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>GRETCHEN HUTT</h1>
+										<p class="desc-speakers">Ingeniera en Diseño Industrial, logró especializarse en Interacción Digital en HFG SwäbishGmund, que la han llevado
+											a desarrollar proyectos para Disney, Sixt, National Gallery of Singapore, Resorts World Sentosa, Redhat, Dow Corning,
+											SCB, entre otros.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 12 -->
+		<div id="modal-speaker-12" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s12.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>FEDERICO CARRANZA</h1>
+										<p class="desc-speakers">Tiene más de 15 años de experiencia gerencial, después de su MBA en Boston, fue gerente de ventas para América
+											Latina en EF Education First. Luego se unió a los primeros ejecutivos de ventas en Google México, llegando a dirigir
+											un equipo de compras en Google New York, más tarde se une a Spotify como Director de Ventas en México y actualmente
+											Fede decide emprender en México para ayudar a las marcas a ganar en el mundo digital.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 13 -->
+		<div id="modal-speaker-13" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s13.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>JOSE ELIAS</h1>
+										<p class="desc-speakers">Es asesor de empresas Global 1000 y universidades como Boston University, Harvard y MIT, además de ser un visionario
+											(futurólogo) y bloguero.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 14 -->
+		<div id="modal-speaker-14" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s14.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>DIEGO OCONITRILLO</h1>
+										<p class="desc-speakers">Es asesor de empresas Global 1000 y universidades como Boston University, Harvard y MIT, además de ser un visionario
+											(futurólogo) y bloguero.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 15 -->
+		<div id="modal-speaker-15" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s15.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>CRISTINA VINDAS</h1>
+										<p class="desc-speakers">Es Project Manager y coach, apasionada por los modelos de negocio, el pensamiento sistémico y las filosofías como
+											Design Thinking. Práctica meditación Vipassana, ama capturar el alma de cada país (su gente) a través de la fotografía
+											y actualmente coordina en Costa Rica el programa de Impact Hub Scaling.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 16 -->
+		<div id="modal-speaker-16" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s16.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>CHRISTIAN MARÍN</h1>
+										<p class="desc-speakers">Es un emprendedor referente en Costa Rica con una startup que se dedica a la experimentación pre-clínica de nuevas
+											tecnologías para el tratamiento de cáncer.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 17 -->
+		<div id="modal-speaker-17" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s17.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>ANTONIO VITOLA</h1>
+										<p class="desc-speakers">Es un visionario que desde hace más de 45 años en su empresa ya contaba con un departamento del Diseño del Futuro,
+											actualmente desarrolla iniciativas que buscan que organizaciones públicas y privadas puedan contribuir al desarrollo
+											de la Latinoamérica que soñamos.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 18 -->
+		<div id="modal-speaker-18" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s18.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>ANDREA SAN GIL</h1>
+										<p class="desc-speakers">Es una especialista en temas de movilidad urbana, actualmente lidera Global Shapers San Jose y el Centro para la
+											Sostenibilidad Urbana.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 19 -->
+		<div id="modal-speaker-19" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s19.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>ALVARO CEDEÑO</h1>
+										<p class="desc-speakers">Es especialista en resolución de conflictos y negocios con una amplia trayectoria gerencial, ejecutiva y como miembro
+											de juntas directivas, autor de varios libros enfocados en gestión empresarial y el ser humano detrás de cada empresa,
+											actualmente es columnista de La Nación donde aborda temas que van desde empresas familiares, creatividad, ingeniería
+											inversa, desarrollo personal e incluso neurociencia.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 20 -->
+		<div id="modal-speaker-20" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s20.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>ALEJANDRO VEGA</h1>
+										<p class="desc-speakers">Tiene un MBA de la Universidad de Pennsylvania y es Ing.Industrial de la Universidad Estatal de Luisiana, es Fundador
+											de Huli una startup que está generando un impacto en el area de la salud, a través de la transparencia y calidad,
+											aspectos que los han llevado a una gama de reconocimientos internacionales.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 21 -->
+		<div id="modal-speaker-21" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s21.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>ADRIAN LACHNER</h1>
+										<p class="desc-speakers">Ingeniera en Diseño Industrial, logró especializarse en Interacción Digital en HFG SwäbishGmund, que la han llevado
+											a desarrollar proyectos para Disney, Sixt, National Gallery of Singapore, Resorts World Sentosa, Redhat, Dow Corning,
+											SCB, entre otros.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Speaker 22 -->
+		<div id="modal-speaker-22" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s22.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<h1>MARIO MORALES</h1>
+										<p class="desc-speakers">Es un especialista en innovación y creatividad, es ing. industrial, tiene un MBA del INCAE Business School, es
+											fundador y CEO de Innovare, le apasiona ayudar a otras empresas a innovar lo que lo ha llevado a asesorar a Kraft,
+											Intel, P&G, Bayer, HSBC, Roche, entre otras</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Modals -->
 
@@ -724,6 +1561,37 @@
 			function stopVideo() {
 				player.stopVideo();
 			}
+
+			function sendContact() {
+			var nameContact = $('#nameContact').val();
+			var emailContact = $('#emailContact').val();
+
+			$('#sendContact').addClass('hidden');
+			
+			var setHeader = function (req) { 
+				req.setRequestHeader('content-type', 'application/json'); 
+				req.setRequestHeader('accept', 'application/json');   
+			};
+
+			var data = JSON.stringify({email:emailContact, name:nameContact});
+
+			$.ajax({
+			  type: "POST",
+			  url: "contact",
+			  beforeSend: setHeader,
+			  data: data,
+			  success: function(res){
+			    $('#sendContact').removeClass('hidden');
+			    $('#nameContact').val('');
+			    $('#emailContact').val('');
+			    alert('Información enviada correctamente. Pronto lo estaremos contactando.');
+			  },
+			  error: function () {
+			    $('#sendContact').removeClass('hidden');
+			  	alert('No se pudo enviar la información. Porfavor enviar nuevamente.')
+			  }
+			});
+		}
 		</script>
 
 
