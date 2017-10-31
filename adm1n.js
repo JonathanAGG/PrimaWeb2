@@ -44,7 +44,8 @@ exports.loginUser = (req, res) => {
 }
 
 exports.getAdmins = (req, res) => {
-    checkHeaders(req.headers, callback => {
+	res.send(200,true);
+    /*checkHeaders(req.headers, callback => {
     	if(callback) {
 		    db.collection('admin').find({}).toArray((error, doc) => {
 		        if(error) {throw error; res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});}
@@ -56,7 +57,7 @@ exports.getAdmins = (req, res) => {
     	else {
     		res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});
     	}
-    })
+    })*/
     /*db.collection('admin').findAndModify(admin,{},{$set:{token:y}}, {upsert: false, new: false}, (error, doc) => {
         if(error) {throw error; res.send(400, {error:'Hemos tenido un error, favor solicitar la reserva nuevamente'})}
         else if(doc.value === null) res.send(400, {error:'VA JALANDO HIJUEPUTA'});
