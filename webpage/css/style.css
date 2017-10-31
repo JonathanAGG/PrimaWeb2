@@ -443,11 +443,11 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 0 0;
   }
 }
-.fh5co-section p {
+/* .fh5co-section p {
   color: rgba(255, 255, 255, 0.3);
   font-size: 18px;
   line-height: 1.5;
-}
+} */
 
 .section-heading {
   width: 100%;
@@ -784,10 +784,10 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
   margin-bottom: 20px !important;
 }
-#fh5co-started .fh5co-heading p {
+/* #fh5co-started .fh5co-heading p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
-}
+} */
 
 .member {
   width: 100%;
@@ -2105,8 +2105,8 @@ b{
       }
 
       #fh5co-header .display-tc {
-				padding-top: 350px; 
-				padding-bottom:90px; 
+				padding-top: 250px; 
+				padding-bottom:190px; 
 				color:#FFFFFF
 
 			}
@@ -2120,7 +2120,7 @@ b{
         }
 
         #fh5co-header .display-tc {
-          padding-top: 310px; 
+          padding-top: 280px; 
           padding-bottom:215px; 
           color:#FFFFFF
   
@@ -2141,8 +2141,97 @@ b{
 
       .titlesLogos{
 
-        margin: 0% 12% 10%
+        margin: 0% 12% 5%
       }
+
+
+
+      #fh5co-header .display-tc .title1 {
+        
+                letter-spacing: 3px;
+                font-weight: bold;
+                font-size: 15px;
+              }
+        
+              #fh5co-header .display-tc .title2 {
+        
+                letter-spacing: 3px;
+                font-weight: bold;
+                font-size: 10px;
+              }
+        
+              @media (max-width: 767px) {
+        
+                #categ6 {
+        
+                  margin-left: 25%;
+                }
+        
+              }
+        
+              @media (min-width: 768px) {
+        
+                #fh5co-header .display-tc .title1 {
+        
+                  letter-spacing: 3px;
+                  font-weight: bold;
+                  font-size: 27px;
+                }
+        
+                #fh5co-header .display-tc .title2 {
+        
+                  letter-spacing: 3px;
+                  font-weight: bold;
+                  font-size: 15px;
+                }
+        
+                #fh5co-header .display-tc img {
+        
+                  display: inline;
+                  padding: 0% 12%;
+                }
+              }
+        
+              .title-section {
+        
+                letter-spacing: 3px;
+                font-weight: bold;
+                font-size: 18px;
+              }
+        
+              .why-content p {
+        
+                letter-spacing: 2px;
+                font-weight: bold;
+                font-size: 14px;
+        
+              }
+        
+              .title-primary {
+        
+                letter-spacing: 2px;
+                font-weight: bold;
+                font-size: 48px;
+        
+              }
+        
+              .speaker-box p{
+                color: #FFFFFF;
+                font-size: 20px
+              }
+
+              .content-p {
+                
+               letter-spacing: 1px;
+               font-size: 18px;
+            }
+                
+            .category p {
+                
+              letter-spacing: 1px;
+              font-weight: bold;
+              font-size: 13px;
+            }
       
 
       
