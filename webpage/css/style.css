@@ -2131,10 +2131,19 @@ b{
       .content-speaker{
 				margin-left: 0px;
 				margin-right: 0px;
-			}
+      }
+      
+      .title-speakers {
+        
+                
+                font-weight: bold;
+                font-size: 35px;
+              }
+
 			.desc-speakers{
 
-				padding: 0% 5%
+        padding: 0% 5%;
+        font-size: 15px;
 
       }
 
@@ -2206,14 +2215,7 @@ b{
                 font-size: 14px;
         
               }
-        
-              .title-primary {
-        
-                letter-spacing: 2px;
-                font-weight: bold;
-                font-size: 48px;
-        
-              }
+
         
               .speaker-box p{
                 color: #FFFFFF;
@@ -2233,7 +2235,34 @@ b{
               font-size: 13px;
             }
       
-
+            .innovadores {
+              
+                                  margin: 10% 5%
+                                }
+              
+                                .title-primary {
+              
+                                    letter-spacing: 2px;
+                                    font-weight: bold;
+                                    font-size: 35px;
+              
+                                  }
+              
+                                @media (min-width: 768px) {
+              
+                                  .title-primary {
+              
+                                    letter-spacing: 2px;
+                                    font-weight: bold;
+                                    font-size: 48px;
+              
+                                  }
+              
+                                  .innovadores {
+              
+                                    margin: 10% 12%
+                                  }
+                                }
       
 /*    ---------------       SPEAKERS    ---------------------  */
 
