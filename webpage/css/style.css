@@ -1976,7 +1976,7 @@ b{
   
       .modal-speakers button.close {
   
-        margin: 2% 2%;
+        margin: 2% 2% 0%;
       }
   
       .speaker-box .inner-box img {
@@ -2086,7 +2086,7 @@ b{
       #fh5co-inn .contentLogo img{
   
         margin-bottom: 65%;
-        max-width: 207px;
+        max-width: 130px;
         max-height: 50px
       }
   
@@ -2135,7 +2135,7 @@ b{
       
       .title-speakers {
         
-                
+                margin-bottom: 16px;
                 font-weight: bold;
                 font-size: 35px;
               }
@@ -2210,11 +2210,19 @@ b{
         
               .why-content p {
         
-                letter-spacing: 2px;
-                font-weight: bold;
-                font-size: 14px;
-        
+                letter-spacing: 1px;
+                font-size: 12px;
+                font-weight: normal;
+                
+                padding: 0% 10%;
               }
+              .why-content .whySubtitle {
+                
+              letter-spacing: 2px;
+              font-weight: bold;
+              font-size: 14px;
+                
+             }
 
         
               .speaker-box p{
