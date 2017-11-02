@@ -1918,12 +1918,12 @@ b{
         left: 0;
         /* position: absolute; */
         padding: 0;
-        transition: opacity .1s;
+       /*  transition: opacity .0s; */
       }
   
       .speaker-box:hover .inner-box {
         opacity: 1;
-        transition: opacity .8s;
+       /*  transition: opacity .8s; */
       }
   
       .speaker-box .inner-box .text {
@@ -2631,21 +2631,96 @@ b{
                 background-size: 100% 100%;
               }
 
-                            /* SPEAKER22 */
+              /* SPEAKER23 */
+              #speaker23 {
           
-              #speaker22 {
-          
-                background: url('../images/speakers/s22.png');
+                background: url('../images/speakers/s23.png');
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
               }
           
-              #speaker22:hover {
+              #speaker23:hover {
           
-                background: url('../images/speakers/s22.png'), url('../images/speakers/grad.png');
+                background: url('../images/speakers/s23.png'), url('../images/speakers/grad2.png');
                 background-blend-mode: multiply;
                 background-size: 100% 100%;
               }
+
+              /* SPEAKER24 */
+              #speaker24 {
+          
+                background: url('../images/speakers/s24.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+              }
+          
+              #speaker24:hover {
+          
+                background: url('../images/speakers/s24.png'), url('../images/speakers/grad.png');
+                background-blend-mode: multiply;
+                background-size: 100% 100%;
+              }
+
+              /* SPEAKER25 */
+              #speaker25 {
+                
+                      background: url('../images/speakers/s25.png');
+                      background-repeat: no-repeat;
+                      background-size: 100% 100%;
+                    }
+                
+                    #speaker25:hover {
+                
+                      background: url('../images/speakers/s25.png'), url('../images/speakers/grad.png');
+                      background-blend-mode: multiply;
+                      background-size: 100% 100%;
+                    }
+
+            /* SPEAKER26 */
+            #speaker26 {
+              
+                    background: url('../images/speakers/s26.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                  }
+              
+                  #speaker26:hover {
+              
+                    background: url('../images/speakers/s26.png'), url('../images/speakers/grad2.png');
+                    background-blend-mode: multiply;
+                    background-size: 100% 100%;
+                  }
+
+
+          /* SPEAKER27 */
+          #speaker27 {
+            
+                  background: url('../images/speakers/s27.png');
+                  background-repeat: no-repeat;
+                  background-size: 100% 100%;
+                }
+            
+                #speaker27:hover {
+            
+                  background: url('../images/speakers/s27.png'), url('../images/speakers/grad.png');
+                  background-blend-mode: multiply;
+                  background-size: 100% 100%;
+                }
+
+            /* SPEAKER28 */
+            #speaker28 {
+              
+                    background: url('../images/speakers/s28.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                  }
+              
+                  #speaker28:hover {
+              
+                    background: url('../images/speakers/s28.png'), url('../images/speakers/grad2.png');
+                    background-blend-mode: multiply;
+                    background-size: 100% 100%;
+                  }
 
               /* MORE */
           
@@ -2656,13 +2731,7 @@ b{
                       background-size: 100% 100%;
                     }
                 
-/*                     #speaker22:hover {
-                
-                      background: url('../images/speakers/s22.png'), url('../images/speakers/grad.png');
-                      background-blend-mode: multiply;
-                      background-size: 100% 100%;
-                    }
- */
+
 
 
 
