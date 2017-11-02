@@ -558,10 +558,30 @@
 						</div>
 
 					</div>
+
+					<!-- More -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="content-speaker-more">
+
+							<div id="speaker-more" style="padding-top: 86px">
+								<p style="font-size: 50px">+15</p>
+							</div>
+
+							<div id="speaker-more-hover" style="padding-top: 65px; display: none">
+									<p style="font-size: 14px; margin-bottom: 0px; color: black; font-weight: bold">AÚN QUEDAN MÁS</p>
+									<p style="font-size: 21px; margin-bottom: 0px; font-weight: bold">INNOVADORES</p>
+									<p style="font-size: 16px; margin-bottom: 22px; color: black; font-weight: bold">POR REVELAR</p>
+									<p style="font-size: 13px; letter-spacing: 5px; color: black; font-weight: bold">¡MANTENTE ATENTO!</p>
+								</div>
+						</div>
+
+					</div>
 				</div>
 
 			</div>
 		</div>
+
+	
 
 		<!-- .......................................................................... -->
 
@@ -796,6 +816,11 @@
 
 									<img src="images/col/col8.png" alt="PrismaFest">
 								</div>
+
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col9.png" alt="PrismaFest">
+								</div>
 							</div>
 
 
@@ -863,7 +888,7 @@
 										<p class="title-speakers">TOMAS DE CAMINO</p>
 										<p class="desc-speakers">Tomas es científico, biologo, matemático, productor musical, profesor, artista y un referente nacional en temas
 											de innovación, incluso llego a ganar el premio Lee Siegel con el articulo más original del mundo en biología matemática.
-											</p>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -1103,7 +1128,7 @@
 											las mejores incubadoras del mundo. Jorg es miembro del Consejo Asesor de KOP Interim & Business Consultancy y
 											tiene amplia experiencia en negocios online y offline B2C y B2B (Startups, Retail, Lifestyle, FMCG, Tech, Automotive,
 											Interior, Lighting) de diferentes propiedades (capital privado / de riesgo, valores de bolsa, familiar, etc).
-											</p>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -1630,12 +1655,20 @@
 					});
 				}
 			}
+		
+		$( "#content-speaker-more" ).hover(function() {
 
+			$('#speaker-more').hide(300)
+			$('#speaker-more-hover').show(300)
+			
+			}, function() {
 
+				$('#speaker-more-hover').hide(300)
+				$('#speaker-more').show(300)
+			
+			}
+		  );
 		</script>
-
-
-
 </body>
 
 </html>

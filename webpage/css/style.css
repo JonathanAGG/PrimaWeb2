@@ -2631,8 +2631,38 @@ b{
                 background-size: 100% 100%;
               }
 
+                            /* SPEAKER22 */
+          
+              #speaker22 {
+          
+                background: url('../images/speakers/s22.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+              }
+          
+              #speaker22:hover {
+          
+                background: url('../images/speakers/s22.png'), url('../images/speakers/grad.png');
+                background-blend-mode: multiply;
+                background-size: 100% 100%;
+              }
 
-
+              /* MORE */
+          
+              #content-speaker-more {
+                
+                      background: url('../images/speakers/gradMore.png');
+                      background-repeat: no-repeat;
+                      background-size: 100% 100%;
+                    }
+                
+/*                     #speaker22:hover {
+                
+                      background: url('../images/speakers/s22.png'), url('../images/speakers/grad.png');
+                      background-blend-mode: multiply;
+                      background-size: 100% 100%;
+                    }
+ */
 
 
 
