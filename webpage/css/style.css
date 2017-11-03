@@ -2024,15 +2024,12 @@ b{
   
   
       .speaker-box {
-  
         max-width: 272px;
         max-height: 272px;
-  
         min-width: 224px;
         min-height: 224px;
-  
-  
         margin-bottom: 30px;
+        cursor: pointer;
       }
   
       #fh5co-about {
@@ -2077,7 +2074,8 @@ b{
   
         margin-bottom: 15%;
         width: 80px;
-        height: 80px
+        height: 80px;
+        cursor: default;
       }
   
       #fh5co-inn .invite img {
@@ -2091,7 +2089,8 @@ b{
   
         margin-bottom: 65%;
         max-width: 130px;
-        max-height: 50px
+        max-height: 50px;
+        cursor: default;
       }
   
       .modals-img{
@@ -2245,6 +2244,7 @@ b{
               letter-spacing: 1px;
               font-weight: bold;
               font-size: 13px;
+              cursor: default;
             }
       
             .innovadores {

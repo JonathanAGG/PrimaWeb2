@@ -952,7 +952,7 @@
 						<p class="title-section" style="color:white; margin-bottom: 0px">APÚNTATE A LO</p>
 						<h2 style="background: -webkit-linear-gradient(226.13deg, #00E9FF 50%, #D300FF 100%);-webkit-background-clip:text;-webkit-text-fill-color: transparent;font-weight:bolder;margin-bottom:5px;">DESCONOCIDO</h2>
 						<input type="text" id="nameContact" style="width:100%;" placeholder="Nombre">
-						<input type="email" id="emailContact" style="width:100%;margin-top:5px;" placeholder="Correo">
+						<input type="email" name="email" id="emailContact" style="width:100%;margin-top:5px;" placeholder="Correo">
 						<button class="prismaButton" id="sendContact" onclick="sendContact()" style="float:right;margin-top:10px;padding:5px 20px;">ENVIAR</button>
 						<div style="display:flex;margin-top:60px;">
 
@@ -1885,6 +1885,7 @@
 
 			// 4. The API will call this function when the video player is ready.
 			function onPlayerReady(event) {
+				event.target.mute();
 				event.target.playVideo();
 			}
 
@@ -1892,7 +1893,13 @@
 			//    The function indicates that when playing a video (state=1),
 			//    the player should play for six seconds and then stop.
 			var done = false;
+
 			function onPlayerStateChange(event) {
+				console.log(event);
+				if(event.data == YT.PlayerState.ENDED){
+			        event.target.seekTo(0);
+			        event.target.playVideo();
+			    }
 
 			}
 			function stopVideo() {
