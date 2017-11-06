@@ -43,7 +43,12 @@ app.post('/queries', basicServices.getQueries); //POST
 app.post('/adm1n/pages/login', adminServices.loginUser);  
 app.get('/adm1n/pages/admins', adminServices.getAdmins);  
 app.post('/adm1n/pages/admin', adminServices.newAdmin);  
+
 app.get('/adm1n/pages/info', adminServices.getInfo); 
+
+app.get('/adm1n/pages/events', adminServices.getEvents); 
+app.post('/adm1n/pages/event', adminServices.newEvent); 
+app.put('/adm1n/pages/event', adminServices.editEvent); 
 
 app.post('/qr', basicServices.qrRegister); 
 

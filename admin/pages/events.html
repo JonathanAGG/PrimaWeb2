@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../images/favicon.png" type="image/x-icon">
 
-    <title>Prisma Administrator - Administrators</title>
+    <title>Prisma Administrator - Events</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -116,18 +116,21 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-8">
-                    <h1 class="page-header" style="color:#337ab7;">Administradores</h1>
+                    <h1 class="page-header" style="color:#f0ad4e;">Eventos</h1>
                 </div>
                 <div class="col-lg-4">
-                    <h1 class="page-header" style="border: 0px;"  data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-plus our-glyp" data-toggle="tooltip" title="Agregar!"></i></h1>
+                    <h1 class="page-header" style="border: 0px;" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-plus our-glyp" data-toggle="tooltip" title="Agregar!"></i></h1>
                 </div>
                 <div class="col-lg-12">
                     <div class="container">
                         <table id="table" style="max-width: 100%;">
                             <thead>
                                 <tr>
-                                    <th data-field="name">Nombre</th>
-                                    <th data-field="email">Correo</th>
+                                    <th data-field="_id">Código</th>
+                                    <th data-field="description">Descripción</th>
+                                    <th data-field="max">Campos totales</th>
+                                    <th data-field="left">Campos disponibles</th>
+                                    <th data-field="action" data-formatter="actionFormatter" data-events="actionEvents">Editar</th>
                                 </tr>
                             </thead>
                         </table>
@@ -148,39 +151,94 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Agregar Administrador</h4>
+            <h4 class="modal-title">Agregar evento</h4>
           </div>
           <div class="modal-body">
             <div class="row">
                 <div class="col-lg-5">
-                    <b>Nombre</b>
+                    <b>Código</b>
                 </div>
                 <div class="col-lg-7">
-                    <input id="newName" type="text" name="name"></input>
+                    <input id="newCode" type="text" name="code"></input>
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="col-lg-5">
-                    <b>Correo</b>
+                    <b>Descripción</b>
                 </div>
                 <div class="col-lg-7">
-                    <input id="newEmail" type="email" name="email"></input>
+                    <input id="newDescription" type="text" name="description"></input>
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="col-lg-5">
-                    <b>Contraseña</b>
+                    <b>Cantidad total</b>
                 </div>
                 <div class="col-lg-7">
-                    <input id="newPass" type="text"></input>
+                    <input id="newMax" type="number" name="max" value="1" min="1"></input>
                 </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" onclick="newAdmin()">Añadir</button>
+            <button type="button" class="btn btn-primary" onclick="newEvent()">Añadir</button>
             <button type="button" class="btn btn-default" data-dismiss="modal" id="closeButton">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="editModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" id="ModalTitle">Editar evento</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row" id="">
+                <div class="col-lg-5">
+                    <b>Descripción</b>
+                </div>
+                <div class="col-lg-7">
+                    <input id="editDesc" type="text" name="description"></input>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-5">
+                    <b>Cantidad total</b>
+                </div>
+                <div class="col-lg-7">
+                    <input id="editMax" type="number" name="max" min="1"></input>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-5">
+                    <b>Inscritos</b>
+                </div>
+                <div class="col-lg-7">
+                    <textarea id="editSigned" name="signed" style="width:80%;"></textarea> 
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-5">
+                    <b>Ingresados</b>
+                </div>
+                <div class="col-lg-7">
+                    <textarea id="editEntered" name="entered" style="width:80%;"></textarea> 
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="editEvent()" id="editButton">Editar</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="closeEdit">Close</button>
           </div>
         </div>
 
@@ -210,7 +268,7 @@
     <script src="../dist/js/amplify.store.js"></script>
 
     <!-- Login JavaScript -->
-    <script src="../js/administrators.js"></script>
+    <script src="../js/events.js"></script>
 
 </body>
 

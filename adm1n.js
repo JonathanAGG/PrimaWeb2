@@ -94,6 +94,54 @@ exports.getInfo = (req, res) => {
 }
 
 
+exports.getEvents = (req, res) => {
+    checkHeaders(req.headers, callback => {
+        if(callback) {
+            db.collection('reservations').find({}).toArray((error, doc) => {
+                if(error) {throw error; res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});}
+                else res.send(200, doc);
+            })
+        }
+        else {
+            res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});
+        }
+    })
+}
+
+exports.newEvent = (req, res) => {
+    checkHeaders(req.headers, callback => {
+        if(callback) {
+            var resource = req.body;
+            db.collection('reservations').insert(resource,(error, doc) => {
+                if(error) {throw error; res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});}
+                else res.send(200, true);
+            })
+        }
+        else {
+            res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});
+        }
+    })
+}
+
+exports.editEvent = (req, res) => {
+    checkHeaders(req.headers, callback => {
+        if(callback) {
+            var searchQuery = {_id:req.body._id},
+                resource = req.body;
+            db.collection('reservations').findAndModify(searchQuery,{},{$set:resource}, {upsert: false, new: false}, (error, doc) => {
+                if(error) {throw error; callback(false)}
+                else{
+                    res.send(200,true);
+                }
+            })
+        }
+        else {
+            res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});
+        }
+    })
+}
+
+
 function checkHeaders(headers, callback) {
 	let adminInfo = headers.authorization.split(':'),
 		email = adminInfo[0],
