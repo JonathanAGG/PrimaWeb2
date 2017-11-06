@@ -2726,6 +2726,21 @@ b{
                     background-size: 100% 100%;
                   }
 
+             /* SPEAKER29 */
+             #speaker29 {
+              
+                    background: url('../images/speakers/s29.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                  }
+              
+                  #speaker29:hover {
+              
+                    background: url('../images/speakers/s29.png'), url('../images/speakers/grad2.png');
+                    background-blend-mode: multiply;
+                    background-size: 100% 100%;
+                  }
+
               /* MORE */
           
               #content-speaker-more {

@@ -632,7 +632,8 @@
 								<div class="row">
 									<p style="line-height:100%;">
 										<span class="text-title" style="margin-top:-10px;">
-											<b>ROBERTO</b> <br>DE MENZERVILLE</span>
+											<b>ROBERTO</b>
+											<br>DE MENZERVILLE</span>
 									</p>
 								</div>
 							</div>
@@ -649,6 +650,22 @@
 									<p>
 										<span class="text-title">
 											<b>PEDRO</b> BEIRUTE</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Speaker 29 -->
+					<div class="col-md-3 col-sm-6  text-center fh5co-heading wrapper">
+						<div class="speaker-box" id="speaker29" data-toggle="modal" data-target="#modal-speaker-29">
+							<div class="inner-box">
+								<img src="images/headerSpks.png" alt="">
+								<div class="row">
+									<p>
+										<span class="text-title">
+											<b>ALBERTO</b> VÁZQUEZ</span>
 									</p>
 								</div>
 							</div>
@@ -927,6 +944,25 @@
 
 									<img src="images/col/col10.png" alt="PrismaFest">
 								</div>
+
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col11.png" alt="PrismaFest">
+								</div>
+
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col12.png" alt="PrismaFest">
+								</div>
+							</div>
+
+							<div class="row ">
+
+								<div class="col-md-2 col-sm-4 col-xs-6 text-center">
+
+									<img src="images/col/col13.png" alt="PrismaFest">
+								</div>
+
 							</div>
 
 
@@ -1810,6 +1846,35 @@
 			</div>
 		</div>
 
+		<!-- Speaker 29 -->
+		<div id="modal-speaker-29" class="modal fade modal-speakers" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content" style="color:black;">
+					<div class="modal-body">
+						<div class="content">
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+									<img src="images/speakers/s29.png" class="img-responsive" alt="Speakers">
+								</div>
+								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+									<div class="row">
+										<p class="title-speakers">ALBERTO VÁZQUEZ</p>
+										<p class="desc-speakers">Alberto es Master en Innovación y especialista en Estrategias Digitales y Aceleración de Negocios. Profesor del
+											ITESM, IESDE, IEE, ICAMI. Consultor para Bimbo, Pelmex, Liverpool, Sears Gruma, Holcim, Nissan, entre otros. Además
+											es Bailarín semiprofesional en Danza Africana, Danza Afrocubana y Músico.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 		<!-- MODAL EMAIL-->
 		<div id="modal-email" class="modal fade modal-speakers" role="dialog">
@@ -1896,10 +1961,10 @@
 
 			function onPlayerStateChange(event) {
 				console.log(event);
-				if(event.data == YT.PlayerState.ENDED){
-			        event.target.seekTo(0);
-			        event.target.playVideo();
-			    }
+				if (event.data == YT.PlayerState.ENDED) {
+					event.target.seekTo(0);
+					event.target.playVideo();
+				}
 
 			}
 			function stopVideo() {
