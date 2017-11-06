@@ -41,7 +41,9 @@ app.post('/contact', basicServices.contactInfo);
 app.post('/queries', basicServices.getQueries); //POST
 
 app.post('/adm1n/pages/login', adminServices.loginUser);  
-app.get('/adm1n/pages/admins', adminServices.getAdmins); 
+app.get('/adm1n/pages/admins', adminServices.getAdmins);  
+app.post('/adm1n/pages/admin', adminServices.newAdmin);  
+app.get('/adm1n/pages/info', adminServices.getInfo); 
 
 app.post('/qr', basicServices.qrRegister); 
 

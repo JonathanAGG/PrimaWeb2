@@ -9,6 +9,7 @@ $( document ).ready(function() {
 
     	var adminInfo = admin.email+':'+admin.token;
     	getAdmins(adminInfo);
+    	getInfo(adminInfo);
 	    
 
 	    // set the date we're counting down to
@@ -50,8 +51,6 @@ function buscar() {
 }
 
 function getAdmins(token) {
-	// adminsCount
-	
 	var setHeader = function (req) { 
 		req.setRequestHeader('content-type', 'application/json'); 
 		req.setRequestHeader('accept', 'application/json');   
@@ -63,7 +62,27 @@ function getAdmins(token) {
 	  url: "admins",
 	  beforeSend: setHeader,
 	  success: function(res){
-	  	console.log(res);
+	  	$('#adminsCount').text(res.length);
+	  },
+	  error: function (error) {
+	  	alert(error.responseJSON.error);
+	  }
+	});
+}
+
+function getInfo(token) {
+	var setHeader = function (req) { 
+		req.setRequestHeader('content-type', 'application/json'); 
+		req.setRequestHeader('accept', 'application/json');   
+		req.setRequestHeader('authorization', token);  
+	};
+	
+	$.ajax({
+	  type: "GET",
+	  url: "info",
+	  beforeSend: setHeader,
+	  success: function(res){
+	  	$('#participantsCount').text(res.length);
 	  },
 	  error: function (error) {
 	  	alert(error.responseJSON.error);

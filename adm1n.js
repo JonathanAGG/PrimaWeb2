@@ -45,7 +45,6 @@ exports.loginUser = (req, res) => {
 }
 
 exports.getAdmins = (req, res) => {
-	res.send(200,true);
     checkHeaders(req.headers, callback => {
     	if(callback) {
 		    db.collection('admin').find({}).toArray((error, doc) => {
@@ -57,17 +56,43 @@ exports.getAdmins = (req, res) => {
     		res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});
     	}
     })
-    /*db.collection('admin').findAndModify(admin,{},{$set:{token:y}}, {upsert: false, new: false}, (error, doc) => {
-        if(error) {throw error; res.send(400, {error:'Hemos tenido un error, favor solicitar la reserva nuevamente'})}
-        else if(doc.value === null) res.send(400, {error:'VA JALANDO HIJUEPUTA'});
-        else{
-        	console.log(doc.value);
-        	admin['token'] = y;
-        	admin['name'] = doc.value.name;
-            res.send(200,admin);
-        }
-    })*/
 }
+
+exports.newAdmin = (req, res) => {
+    checkHeaders(req.headers, callback => {
+        if(callback) {
+            db.collection('Ids').findAndModify({_id:1},{},{$inc:{admin:1}},function(err, doc_ids) {
+                if(err) {throw err; res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});}
+                else{
+                    var resource = req.body;
+                    resource["_id"] = doc_ids.value.admin;
+                    db.collection('admin').insert(resource,(error, doc) => {
+                        if(error) {throw error; res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});}
+                        else res.send(200, true);
+                    })
+                }
+            })
+        }
+        else {
+            res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});
+        }
+    })
+}
+
+exports.getInfo = (req, res) => {
+    checkHeaders(req.headers, callback => {
+        if(callback) {
+            db.collection('info').find({}).toArray((error, doc) => {
+                if(error) {throw error; res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});}
+                else res.send(200, doc);
+            })
+        }
+        else {
+            res.send(400, {error:'Hemos tenido un error, favor intentar más tarde'});
+        }
+    })
+}
+
 
 function checkHeaders(headers, callback) {
 	let adminInfo = headers.authorization.split(':'),
