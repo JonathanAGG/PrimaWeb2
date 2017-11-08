@@ -2902,6 +2902,36 @@ b{
               background-size: 100% 100%;
             }
 
+            /* SPEAKER32 */
+            #speaker32 {
+              
+               background: url('../images/speakers/s32.png');
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+            }
+              
+            #speaker32:hover {
+              
+              background: url('../images/speakers/s32.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+
+            /* SPEAKER33 */
+            #speaker33 {
+              
+               background: url('../images/speakers/s33.png');
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+            }
+              
+            #speaker33:hover {
+              
+              background: url('../images/speakers/s33.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+    
               /* MORE */
           
               #content-speaker-more {
