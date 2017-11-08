@@ -1855,11 +1855,33 @@ textarea {
   margin-right: 10px;
   background: linear-gradient(225deg, rgba(0,219,255,0) 0%, rgba(222,4,252,0) 100%);
 }
-.activeCircle{
-  background: linear-gradient(225deg, rgba(0,219,255,1) 0%, rgba(222,4,255,1) 100%);
+
+.circle1{
+  background: linear-gradient(90deg, rgba(186,1,226,1) 20%, rgba(67,0,229,1) 100%);
   color: white;
   border: 0px
 }
+.circle2{
+  background: linear-gradient(90deg, rgba(255,142,54,1) 20%, rgba(254,33,102,1) 100%);
+  color: white;
+  border: 0px
+}
+.circle3{
+  background: linear-gradient(90deg, rgba(255,0,195,1) 20%, rgba(170,0,199,1) 100%);
+  color: white;
+  border: 0px
+}
+.circle4{
+  background: linear-gradient(90deg, rgba(83,241,244,1) 20%, rgba(9,71,240,1) 100%);
+  color: white;
+  border: 0px
+}
+.circle5{
+  background: linear-gradient(90deg, rgba(116,220,213,1) 20%, rgba(74,250,149,1) 100%);
+  color: white;
+  border: 0px
+}
+
 .fh5co-section2 .blockText{
   font-family: LatoFont-Regular;
   font-weight: bold;
@@ -1868,9 +1890,22 @@ textarea {
   width: 120px;
   line-height: 20px;
 }
-.fh5co-section2 .activeBlock {
-  color: #9E21EF;
+.fh5co-section2 .activeBlock1 {
+  color: rgb(102, 45, 148);
 }
+.fh5co-section2 .activeBlock2 {
+  color: rgb(245, 111, 65);
+}
+.fh5co-section2 .activeBlock3 {
+  color: rgb(241, 23, 198);
+}
+.fh5co-section2 .activeBlock4 {
+  color: rgb(0, 1, 252);
+}
+.fh5co-section2 .activeBlock5 {
+  color: rgb(77, 225, 81);
+}
+
 .prismaButton{
   background: linear-gradient(254.19deg, #00C8FF 2.72%, #DD08F1 101.38%);
   border: none;
@@ -1886,12 +1921,108 @@ textarea {
   padding: 10px 30px;
   margin-top: -10px;
 }
-.confRow{
-  border-top: 1px solid #AF02FA;
+.prismaButtonB1{
+  background: linear-gradient(254.19deg, rgba(67,0,229,1) 2.72%, rgba(186,1,226,1) 101.38%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: -10px;
 }
+.prismaButtonB2{
+  background: linear-gradient(254.19deg, rgba(254,33,102,1) 2.72%, rgba(255,142,54,1) 101.38%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: -10px;
+}
+.confRow1{
+  border-top: 1px solid rgb(102, 45, 148);
+  padding-top: 10px;
+}
+.confRow1:hover{
+  background: #eee;
+  cursor: pointer;
+}
+.confRow2{
+  border-top: 1px solid rgb(245, 111, 65);
+  padding-top: 10px;
+}
+.confRow2:hover{
+  background: #eee;
+  cursor: pointer;
+}
+.confRow3{
+  border-top: 1px solid rgb(241, 23, 198);
+  padding-top: 10px;
+}
+.confRow3:hover{
+  background: #eee;
+  cursor: pointer;
+}
+.confRow4{
+  border-top: 1px solid rgb(0, 1, 252);
+  padding-top: 10px;
+}
+.confRow4:hover{
+  background: #eee;
+  cursor: pointer;
+}
+.confRow5{
+  border-top: 1px solid rgb(77, 225, 81);
+  padding-top: 10px;
+}
+.confRow5:hover{
+  background: #eee;
+  cursor: pointer;
+}
+
 .workRow{
   border-top: 1px solid #085DFD;
   padding-top: 20px;
+}
+
+li > a{
+  color: gray;
+  cursor: pointer;
+}
+li > a:hover{
+  color: black;
+}
+
+#bloque1 li.active > a{
+  color: rgb(102, 45, 148);
+  font-size: 110%;
+}
+#bloque2 li.active > a{
+  color: rgb(245, 111, 65);
+  font-size: 110%;
+}
+#bloque3 li.active > a{
+  color: rgb(241, 23, 198);
+  font-size: 110%;
+}
+#bloque4 li.active > a{
+  color: rgb(0, 1, 252);
+  font-size: 110%;
+}
+#bloque5 li.active > a{
+  color: rgb(77, 225, 81);
+  font-size: 110%;
+}
+#bloque1 p{
+  margin-bottom: 10px;
+}
+#bloque2 p{
+  margin-bottom: 10px;
+}
+#bloque3 p{
+  margin-bottom: 10px;
+}
+#bloque4 p{
+  margin-bottom: 10px;
+}
+#bloque5 p{
+  margin-bottom: 10px;
 }
 
 a{
