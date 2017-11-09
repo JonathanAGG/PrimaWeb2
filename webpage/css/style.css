@@ -1990,23 +1990,35 @@ li > a:hover{
 }
 
 #bloque1 li.active > a{
-  color: rgb(102, 45, 148);
+  background: rgb(102, 45, 148);
+  color: white;
+  font-weight: bolder;
   font-size: 110%;
 }
 #bloque2 li.active > a{
-  color: rgb(245, 111, 65);
+  background: rgb(245, 111, 65);
+  color: white;
+  font-weight: bolder;
   font-size: 110%;
 }
 #bloque3 li.active > a{
-  color: rgb(241, 23, 198);
+  background: rgb(241, 23, 198);
+  color: white;
+  font-weight: bolder;
+  color: white;
+  font-weight: bolder;
   font-size: 110%;
 }
 #bloque4 li.active > a{
-  color: rgb(0, 1, 252);
+  background: rgb(0, 1, 252);
+  color: white;
+  font-weight: bolder;
   font-size: 110%;
 }
 #bloque5 li.active > a{
-  color: rgb(77, 225, 81);
+  background: rgb(77, 225, 81);
+  color: white;
+  font-weight: bolder;
   font-size: 110%;
 }
 #bloque1 p{
