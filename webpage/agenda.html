@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PrismaFest &mdash; Conferencias</title>
+	<title>PrismaFest &mdash; Agenda</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Prisma Innovation Fest - Festival de Innovación Costa Rica" />
 	<meta name="keywords" content="Prisma Innovation Fest - Festival de Innovación Costa Rica"/>
@@ -93,7 +93,6 @@
 
 	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background:linear-gradient(257.94deg,#00D3FF -0.46%, #FF00C8 102.24%); background-size: 100% 100%;" data-stellar-background-ratio="0.5">
 		
-		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -1841,29 +1840,28 @@
 
 	<!-- Speaker 27 -->
 	<div id="modal-speaker-31" class="modal fade modal-speakers" role="dialog">
-			<div class="modal-dialog modal-lg">
-				<!-- Modal content-->
-				<div class="modal-content" style="color:black;">
-					<div class="modal-body">
-						<div class="content">
-							<div class="row content-speaker">
-								<button type="button" class="close" data-dismiss="modal">
-									<img src="images/btn-close.png" alt="">
-								</button>
-								<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
-									<img src="images/speakers/s27.png" class="img-responsive" alt="Speakers">
-								</div>
-								<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
-									<div class="row">
-										<p class="title-speakers">PRISCILA CHAVES</p>
-										<p class="desc-speakers">Ha trabajado por más de 13 años colaborando con multinacionales y startups en América Latina, Africa del Este y
-											el Sudeste Asiático. Como líder de la estrategia comercial para Cognitiva, el aliado estratégico de IBM Watson
-											para Latinoamérica, ella contribuye al desarrollo de soluciones que mejoren la calidad de vida de las personas
-											en la region, a través de Inteligencia Artificial y Computación Cognitiva. Es también Directora Ejecutiva de 10x,
-											una firma consultora que combina la tecnología, educación y emprendimiento para llevar a la región al siguiente
-											nivel.
-										</p>
-									</div>
+		<div class="modal-dialog modal-lg">
+			<!-- Modal content-->
+			<div class="modal-content" style="color:black;">
+				<div class="modal-body">
+					<div class="content">
+						<div class="row content-speaker">
+							<button type="button" class="close" data-dismiss="modal">
+								<img src="images/btn-close.png" alt="">
+							</button>
+							<div class="col-sm-5 col-md-4 col-xs-12 modals-img">
+								<img src="images/speakers/s27.png" class="img-responsive" alt="Speakers">
+							</div>
+							<div class="col-sm-7 col-md-8 col-xs-12 text-center modals-text">
+								<div class="row">
+									<p class="title-speakers">PRISCILA CHAVES</p>
+									<p class="desc-speakers">Ha trabajado por más de 13 años colaborando con multinacionales y startups en América Latina, Africa del Este y
+										el Sudeste Asiático. Como líder de la estrategia comercial para Cognitiva, el aliado estratégico de IBM Watson
+										para Latinoamérica, ella contribuye al desarrollo de soluciones que mejoren la calidad de vida de las personas
+										en la region, a través de Inteligencia Artificial y Computación Cognitiva. Es también Directora Ejecutiva de 10x,
+										una firma consultora que combina la tecnología, educación y emprendimiento para llevar a la región al siguiente
+										nivel.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -1871,6 +1869,33 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+
+	<!-- MODAL EMAIL-->
+	<div id="modal-email" class="modal fade modal-speakers" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content" style="color:black;">
+				<div class="modal-body">
+					<div class="content">
+						<div>
+							<div class="row content-speaker">
+								<button type="button" class="close" data-dismiss="modal">
+									<img src="images/btn-close.png" alt="">
+								</button>
+							</div>
+							<div class="row text-center">
+								<img src="images/logo-email.png" class="img-responsive" style=" max-width: 100%;margin:auto;margin-bottom: 6%;">
+								<p id="msj-email" style="font-size: 18px; margin: 2% 10%"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 
 <!-- Modals -->
@@ -2037,15 +2062,15 @@
 					$('#nameContact').val('');
 					$('#emailContact').val('');
 
-					$('#msj-email').html('Información enviada correctamente. Pronto lo estaremos contactando.')
-					$('#modal-email').modal('show');
-				},
-				error: function () {
+						$('#msj-email').html('Gracias por su interés, serás de los primeros en recibir todos los detalles del festival')
+						$('#modal-email').modal('show');
+					},
+					error: function () {
 
-					$('#msj-email').html('No se pudo enviar la información. Porfavor enviar nuevamente.')
-					$('#modal-email').modal('show');
-					$('#sendContact').removeClass('hidden');
-				}
+						$('#msj-email').html('No se pudo enviar la información. Porfavor enviar nuevamente.')
+						$('#modal-email').modal('show');
+						$('#sendContact').removeClass('hidden');
+					}
 			});
 			}
 		}
