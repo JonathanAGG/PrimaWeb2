@@ -2944,6 +2944,66 @@ b{
               background-blend-mode: multiply;
               background-size: 100% 100%;
             }
+
+            /* SPEAKER34 */
+            #speaker34 {
+              
+               background: url('../images/speakers/s34.png');
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+            }
+              
+            #speaker34:hover {
+              
+              background: url('../images/speakers/s34.png'), url('../images/speakers/grad2.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+
+            /* SPEAKER35 */
+            #speaker35 {
+              
+               background: url('../images/speakers/s35.png');
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+            }
+              
+            #speaker35:hover {
+              
+              background: url('../images/speakers/s35.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+
+            /* SPEAKER36 */
+            #speaker36 {
+              
+               background: url('../images/speakers/s36.png');
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+            }
+              
+            #speaker36:hover {
+              
+              background: url('../images/speakers/s36.png'), url('../images/speakers/grad2.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+
+            /* SPEAKER37 */
+            #speaker37 {
+              
+               background: url('../images/speakers/s37.png');
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+            }
+              
+            #speaker37:hover {
+              
+              background: url('../images/speakers/s37.png'), url('../images/speakers/grad2.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
     
               /* MORE */
           
