@@ -3004,6 +3004,36 @@ b{
               background-blend-mode: multiply;
               background-size: 100% 100%;
             }
+
+            /* SPEAKER38 */
+            #speaker38 {
+              
+               background: url('../images/speakers/s38.png');
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+            }
+              
+            #speaker38:hover {
+              
+              background: url('../images/speakers/s38.png'), url('../images/speakers/grad.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
+
+            /* SPEAKER39 */
+            #speaker39 {
+              
+               background: url('../images/speakers/s39.png');
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+            }
+              
+            #speaker39:hover {
+              
+              background: url('../images/speakers/s39.png'), url('../images/speakers/grad2.png');
+              background-blend-mode: multiply;
+              background-size: 100% 100%;
+            }
     
               /* MORE */
           
